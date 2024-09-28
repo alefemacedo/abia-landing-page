@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*.vue", "src/**/*.js", "src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
