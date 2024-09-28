@@ -1,5 +1,5 @@
 <template>
-    <!-- <div class="header">
+    <div class="header">
         <ui-header />
     </div>
 
@@ -7,8 +7,8 @@
         <ui-content />
 
         <ui-footer />
-    </div> -->
-    <ui-in-construction />
+    </div>
+    <!-- <ui-in-construction /> -->
 </template>
 
 <script setup>
