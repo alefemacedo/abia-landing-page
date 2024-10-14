@@ -1,29 +1,77 @@
 .footer
     display: flex;
-    margin-top: 213px;
+    flex-direction: column;
     font-family: "Bebas neue", sans-serif;
     width: 100%;
-    justify-content: left;
-    background-color: #942F88;
-    padding: 19px 814px 9px 69px;
 
-    .text
+    .contact-info
         display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 397px;
-        letter-spacing: 0.01em;
+        margin-left: 45px;
 
-        .author
-            font-size: 40px;
-            line-height: 60px;
+        .cats
+            align-self: start;
+            margin-right: 46.09px;
 
-        .quote
-            font-size: 16px;
-            line-height: 30px;
-            color: #F1F1F1;
+        .title
+            font-family: 'Bebas neue', sans-serif;
+            font-size: 52px;
+            line-height: 78px;
+            letter-spacing: 0.01em;
+            max-width: 682px;
+            margin-bottom: 94px;
 
-        .copyright
-            font-size: 10px;
-            line-height: 15px;
-            margin-top: 17px;
+            span:first-of-type
+                color: #AB2F5E;
+        
+        .email
+            display: flex;
+            font-size: 38px;
+            line-height: 25px;
+            letter-spacing: 0.02em;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 77px;
+            height: 117px;
+
+            img
+                align-self: start;
+                margin-right: 21px;
+
+            span:last-of-type
+                text-transform: none;
+                color: #AB2F5E
+
+    .social-media
+        display: flex;
+        justify-content: center
+        margin-bottom: 21px;
+
+        a
+            margin-right: 22px;
+
+            &:last-child
+                margin-right: 0px;
+
+    .quote
+        background-color: #942F88;
+
+        .text
+            width: 397px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            letter-spacing: 0.01em;
+            padding: 19px 814px 9px 69px;
+
+            .author
+                font-size: 40px;
+                line-height: 60px;
+
+            .quote
+                font-size: 16px;
+                line-height: 30px;
+                color: #F1F1F1;
+
+            .copyright
+                font-size: 10px;
+                line-height: 15px;
+                margin-top: 17px;

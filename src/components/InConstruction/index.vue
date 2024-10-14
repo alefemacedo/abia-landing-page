@@ -50,7 +50,7 @@
         <div class="footer">
             <div class="text">
                 <span class="author w700">Ábia Bognola</span>
-                <span class="quote w400">Transformando idéias em experiências (Inclusive as minhas)</span>
+                <span class="quote w400">Transformando ideias em experiências (Inclusive as minhas)</span>
             </div>
     
             <div class="social-media">
@@ -75,7 +75,7 @@
         name: 'ui-in-construction'
     })
 
-    const endDate = new Date("09/30/2024 12:00:00");
+    const endDate = new Date("10/13/2024 09:00:00");
     let timeDiff = ref(endDate.getTime() - new Date().getTime());
 
     setInterval(() => {
