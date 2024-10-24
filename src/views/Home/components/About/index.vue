@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div id="about" class="about">
         <div class="content">
             <img src="@/assets/svg/abilities.svg" class="abilities" />
     

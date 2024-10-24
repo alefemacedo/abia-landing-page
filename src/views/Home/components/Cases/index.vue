@@ -1,5 +1,5 @@
 <template>
-    <div class="cases">
+    <div id="cases" class="cases">
         <div class="title">
             <img class="lightning" src="@/assets/img/raio.png" />
             <div class="text">

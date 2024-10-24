@@ -4,6 +4,9 @@
             v-for="(item, index) in items"
             :key="index"
             :label="item.label"
+            :page="item.page"
+            :type="item.type"
+            :name="item.name"
         />
     </div>
 </template>
@@ -23,15 +26,27 @@
     let items = ref([
         {
             label: 'Início',
+            page: '/#home',
+            type: 'link',
+            name: 'home'
         },
         {
             label: 'Sobre mim',
+            page: '/#about',
+            type: 'link',
+            name: 'about'
         },
         {
             label: 'Cases',
+            page: '/#cases',
+            type: 'link',
+            name: 'cases'
         },
         {
             label: 'Contato',
+            page: '/contact',
+            type: 'router',
+            name: 'contact'
         },
     ]);
 </script>

@@ -1,23 +1,37 @@
 <template>
     <div class="menu-item">
-        <span class="w600">{{ label }}</span>
+        <a v-if="type === 'link'" :href="page" class="w600">{{ label }}</a>
+        <router-link v-else :to="page" class="w600">{{ label }}</router-link>
+        <img v-if="path.includes(name)" class="skate" src="@/assets/img/skate.png" />
     </div>
 </template>
 
 <script setup>
+    import { computed } from 'vue';
+    import { useRoute } from 'vue-router';
+
+    const route = useRoute();
+    const path = computed(() =>route.fullPath);
+
     defineOptions({
         name: 'ui-menu-item'
     })
 
-    const props = defineProps({
+    defineProps({
         label: {
             type: String,
             required: true
         },
-        link: String
+        page: {
+            type: String,
+            required: true
+        },
+        type: String,
+        name: {
+            type: String,
+            required: true
+        }
     })
-
-    console.log(props)
 </script>
 
 <style lang="stylus">

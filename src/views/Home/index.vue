@@ -21,7 +21,7 @@
     import Values from './components/Values';
 
     defineOptions({
-        name: 'ui-content',
+        name: 'ui-main-home',
 
         components: {
             'ui-about': About,

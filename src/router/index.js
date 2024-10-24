@@ -3,6 +3,7 @@ import Home from "@/views/Home";
 import Cases from "@/views/Cases";
 import StartDev from '@/views/Cases/StartDev';
 import TradePlus from '@/views/Cases/TradePlus';
+import Contact from '@/views/Contact';
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
         }
     ]
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  }
 ];
 
 const router = createRouter({

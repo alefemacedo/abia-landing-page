@@ -75,7 +75,7 @@
         name: 'ui-in-construction'
     })
 
-    const endDate = new Date("10/13/2024 09:00:00");
+    const endDate = new Date("10/23/2024 12:00:00");
     let timeDiff = ref(endDate.getTime() - new Date().getTime());
 
     setInterval(() => {

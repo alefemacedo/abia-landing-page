@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="contact-info">
+        <div id="contact" class="contact-info">
             <img src="@/assets/svg/cats.svg" class="cats" />
 
             <div class="info">
