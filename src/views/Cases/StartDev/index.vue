@@ -13,7 +13,7 @@
             </span>
 
             <span class="tools">
-                Ferramenta usada
+                Ferramenta usada  
                 <img src="@/assets/svg/figma_logo.svg" />
             </span>
 
@@ -93,7 +93,7 @@
                     <li>Referências de gameficação para ensino</li>
                 </ul>
 
-                <img src="@/assets/svg/stars_plus.svg" class="stars-plus-2" />
+                <img src="@/assets/svg/stars_plus_2.svg" class="stars-plus-2" />
             </div>
 
             <img src="@/assets/img/start_dev_research.png" style="max-width: 1023px;" />
@@ -246,7 +246,7 @@
         },
 
         mixins: [helpers]
-    })
+    });
 
     const objectives = [
         {
@@ -261,7 +261,7 @@
             icon: 'svg/icon_noise-aware.svg',
             label: 'Interface amigável e simples'
         }
-    ]
+    ];
 </script>
 
 <style lang="stylus">

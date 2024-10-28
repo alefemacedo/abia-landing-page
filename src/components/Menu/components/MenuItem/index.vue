@@ -2,7 +2,11 @@
     <div class="menu-item">
         <a v-if="type === 'link'" :href="page" class="w600">{{ label }}</a>
         <router-link v-else :to="page" class="w600">{{ label }}</router-link>
-        <img v-if="path.includes(name)" class="skate" src="@/assets/img/skate.png" />
+        <img
+            v-if="path.includes(name) || (path === '/' && name === 'home')"
+            class="skate"
+            src="@/assets/img/skate.png"
+        />
     </div>
 </template>
 
