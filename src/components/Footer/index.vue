@@ -14,11 +14,11 @@
                         <img src="@/assets/svg/email_icon.svg" />
 
                         <div class="address">
-                            Email
+                            <span class="label">Email</span>
                             <br />
                             <br />
                             <br />
-                            <span>abia.bognola@uxabia.com</span>
+                            <span class="value">abia.bognola@uxabia.com</span>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
         <div class="quote">
             <div class="text">
                 <span class="author w700">Ábia Bognola</span>
-                <span class="quote w400">
+                <span class="quote-text w400">
                     Transformando Ideias em Experiências (inclusive as minhas)
                 </span>
                 <span class="copyright w400">

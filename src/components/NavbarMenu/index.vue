@@ -1,5 +1,11 @@
 <template>
     <div class="menu">
+        <div class="close">
+            <span @click="emit('toggleNavbar', false)">
+                X
+            </span>
+        </div>
+
         <ui-menu-item
             v-for="(item, index) in items"
             :key="index"
@@ -12,16 +18,19 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue';
     import MenuItem from '../MenuItem';
 
+    import { ref } from 'vue';
+
     defineOptions({
-        name: 'ui-menu',
+        name: 'ui-navbar-menu',
 
         components: {
             'ui-menu-item': MenuItem
         }
-    });
+    })
+
+    const emit = defineEmits(['toggleNavbar']);
 
     const items = ref([
         {
@@ -52,6 +61,6 @@
 </script>
 
 <style lang="stylus" scoped>
-    @import './style';
+    @import './style.styl';
 
 </style>

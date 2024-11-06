@@ -2,3 +2,26 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 60px 15px 60px;
+
+    .sidebar
+        display: none;
+
+    @media screen and (max-width: 600px)
+        align-items: center;
+        padding: 15px;
+
+        .sidebar
+            display: inline;
+            margin-right: -44px;
+
+            &-button
+                border-radius: 50px;
+                width: 44px;
+                height: 44px;
+                background-color: #FFFFFF;
+                border: 1px #F5F5F7;
+
+        .logo
+            margin-right: auto;
+            margin-left: auto;
+            width: 44px;

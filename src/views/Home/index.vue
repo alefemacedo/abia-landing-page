@@ -3,10 +3,11 @@
         <div class="content">
             <section class="section-hidden">
                 <ui-home />
+                <ui-about />
                 <ui-values />
                 <ui-accessibility />
                 <ui-cases />
-                <ui-about />
+                <ui-reviews />
             </section>
         </div>
     </main-template>
@@ -19,6 +20,7 @@
     import Cases from './components/Cases';
     import Home from './components/Home';
     import Values from './components/Values';
+    import Reviews from './components/Reviews';
 
     defineOptions({
         name: 'ui-main-home',
@@ -29,6 +31,7 @@
             'ui-cases': Cases,
             'ui-home': Home,
             'ui-values': Values,
+            'ui-reviews': Reviews,
             'main-template': MainTemplate
         }
     });

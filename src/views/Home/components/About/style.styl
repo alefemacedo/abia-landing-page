@@ -1,8 +1,8 @@
 .about
-    margin-top: 170px;
-    margin-bottom: 197px;
+    margin-top: 120px;
+    margin-bottom: 187px;
     position: relative;
-    height: 2000px;
+    height: 1514px;
     display: flex;
     flex-direction: column;
 
@@ -17,6 +17,20 @@
             height: 323px;
             margin-top: 45px;
             margin-left: 108px;
+        
+        .abilities-mobile
+            display: none;
+            position: absolute;
+            z-index: 10;
+            width: 260px;
+            margin-top: 29px
+        
+        @media screen and (max-width: 600px)
+            .abilities
+                display: none;
+
+            .abilities-mobile
+                display: inline;
 
         .visual-identity
             position: relative;
@@ -36,13 +50,32 @@
                 z-index: 1;
                 top: 31px;
                 right: 468px;
+            
+            @media screen and (max-width: 600px)
+                left: 150px;
+                width: 450px;
+                height: 405px;
+
+                .background
+                    width: 450px;
+
+                .letter-A
+                    top: -48px;
+                    left: -31px;
+                    width: 130px;
+
+                .letter-B
+                    top: 22px;
+                    left: 24px;
+                    width: 112px;
+
     
     .presentation
         align-self: center;
         display: flex;
         border-radius: 10px;
         position: absolute;
-        top: 611px;
+        top: 465px;
 
         .text
             display: flex;
@@ -67,7 +100,6 @@
             .resume
                 display: flex;
                 max-width: 509px;
-                height: 180px;
                 margin-top: 40px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 20px;
@@ -76,7 +108,6 @@
 
         .border
             width: 107.17px;
-            height: 581px;
             border-radius: 0px 10px 10px 0px;
             background-color: #461841;
             content: ' ';
@@ -116,32 +147,24 @@
                 border: 0.5px solid #B967A6;
                 color: #FFFFFF;
 
-    .people-reviews
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 589px;
+        @media screen and (max-width: 600px)
+            top: 346px;
+            border-radius: 0px;
 
-        .title
-            display: flex;
-            flex-direction: column;
-            max-width: 840px;
-            margin-bottom: 64.6px;
-
-            span
-                font-family: 'Bebas neue', sans-serif;
-                font-size: 52px;
-                line-height: 62.4px;
-                text-align: center;
-                color: #000000;
+            .text
+                max-width: 345px;
+                border-radius: 0px;
+                padding: 49px 24px 35px 32px;
             
-            img
-                width: 168.15px;
-                align-self: end;
-
-        .reviews
-            display: flex;
-            gap: 58px;
+            .border
+                display: none;
+            
+            .buttons
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 34px;
 
     // $carousel-duration: 27s
     // $carousel-items: 7

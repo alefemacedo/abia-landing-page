@@ -3,7 +3,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 866px;
+    height: 615px;
+
+    @media screen and (max-width: 600px)
+        height: 180px;
 
     .info
         position: relative;
@@ -15,15 +18,34 @@
             h1
                 font-size: 52px;
                 line-height: 78px;
+            
+            @media screen and (max-width: 600px)
+                max-width: 295px;
+
+                h1
+                    font-size: 18px;
+                    line-height: 27px;
+                    text-align: center;
     
     .frame-image
         position: absolute;
         top: 55px;
         left: 20px;
+
+        @media screen and (max-width: 600px)
+            top: 65px;
+            left: 14px;
+
+            img
+                width: 61px;
+                height: 61px;
     
     .scrolldown
         position: absolute;
         top: 445px;
+
+        @media screen and (max-width: 600px)
+            display: none;
     
     .cat-images
         display: flex;
@@ -41,3 +63,16 @@
 
             img
                 width: 67.02px;
+        
+        @media screen and (max-width: 600px)
+            top: 170px;
+            left: 13px;
+
+            .cat img
+                width: 31.06px;
+
+            .cats
+                top: 23px;
+
+                img
+                    width: 25.27px;

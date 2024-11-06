@@ -218,7 +218,7 @@
             </div>
 
             <div class="text">
-                <span class="title3 w700">Problemas Identificados:</span>
+                <span class="highlight w700">Problemas Identificados:</span>
                 <ul>
                     <li>
                         O design original, desenvolvido pelos desenvolvedores, <span class="highlight">
@@ -242,8 +242,10 @@
 
             <div class="text">
                 Com os dados da matriz CSD, os insights dos dados internos e reclamações dos usuários.
+                <br />
+                <br />
 
-                <span class="title2 w700">Identifiquei os principais pontos para o projeto:</span>
+                <span class="highlight w700">Identifiquei os principais pontos para o projeto:</span>
                 <ol>
                     <li>
                         <span class="highlight">Excesso de informações solicitadas:</span> Muitos usuários

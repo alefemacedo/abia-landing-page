@@ -7,7 +7,7 @@
 
             <div class="text">
                 <h1 class="w500">
-                    Conheça a sua próxima Product Designer
+                    Conheça a sua próxima Designer de Produto
                 </h1>
             </div>
 

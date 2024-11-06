@@ -6,7 +6,7 @@
 
         <div class="content">
             <div class="text w500">
-                Minha jornada é impulsionada pela paixão em criar soluções centradas no usuário e transformar em  experiências incríveis
+                Minha jornada é impulsionada pela paixão em criar soluções centradas no usuário e transformar em experiências incríveis
             </div>
         </div>
     </div>

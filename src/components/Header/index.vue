@@ -1,6 +1,13 @@
 <template>
     <div class="header-content">
-        <img src="@/assets/img/logotipo.png" />
+        <div class="sidebar">
+            <button class="sidebar-button" @click="emit('toggleNavbar', true)">
+                <img src="@/assets/svg/menu_icon.svg" />
+            </button>
+        </div>
+
+        <img class="logo" src="@/assets/img/logotipo.png" />
+
         <ui-menu />
     </div>
 </template>
@@ -10,12 +17,16 @@
 
     defineOptions({
         name: 'ui-header',
+
         components: {
-            'ui-menu': Menu
+            'ui-menu': Menu,
         }
     })
+
+    const emit = defineEmits(['toggleNavbar']);
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
     @import './style';
+
 </style>
