@@ -5,10 +5,16 @@
     z-index: 1000;
     height: 120px;
 
+    @media screen and (max-width: 600px)
+        height: 80px;
+
 .body
     grid-area: bd;
     overflow: hidden auto;
     margin-top: 120px;
+
+    @media screen and (max-width: 600px)
+        margin-top: 80px;
 
 .navbar
     grid-area: nav;

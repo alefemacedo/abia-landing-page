@@ -6,6 +6,12 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 600px)
+        margin-top: 60px;
+
+    @media screen and (max-width: 360px)
+        height: 1620px;
+
     .content
         display: flex;
         height: 699px;
@@ -69,6 +75,21 @@
                     left: 24px;
                     width: 112px;
 
+            @media screen and (max-width: 360px)
+                left: 95px;
+
+                .background
+                    width: 364px;
+
+                .letter-A
+                    top: -37px;
+                    left: -24px;
+                    width: 104px;
+
+                .letter-B
+                    top: 18px;
+                    left: 22px;
+                    width: 89px;
     
     .presentation
         align-self: center;
@@ -165,6 +186,10 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 34px;
+        
+        @media screen and (max-width: 360px)
+            .text
+                max-width: 292px;
 
     // $carousel-duration: 27s
     // $carousel-items: 7
