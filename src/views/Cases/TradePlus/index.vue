@@ -185,7 +185,7 @@
         </div>
 
         <div class="csd-matrix section">
-            <span class="title w700">Matrizes CSD (Certezas, Suposições e Dúvidas)</span>
+            <span class="title w700">Matriz CSD (Certezas, Suposições e Dúvidas)</span>
             <br />
 
             <div class="text">
@@ -205,7 +205,7 @@
 
                 <figure>
                     <img src="@/assets/img/trade_plus_csd_2.png" />
-                    <figcaption>
+                    <figcaption style="width: 270px;">
                         Reunião com as pessoas que definimos na reunião. Aqui temos pessoas de Produto,
                         Desenvolvimento, Marketing e suporte ao cliente.
                     </figcaption>
@@ -355,11 +355,13 @@
                 as partes interessadas visualizassem e interagissem com as soluções antes da implementação."
             </div>
 
-            <img src="@/assets/svg/trade_plus_wireframe.svg" />
+            <div class="scrollimage">
+                <img src="/src/assets/svg/trade_plus_wireframe.svg" />
+            </div>
         </div>
 
         <div class="final-thoughts section">
-            <span class="title w700">Reflexões finais</span>
+            <span class="title2 w700">Reflexões finais</span>
             <br />
 
             <div class="text">

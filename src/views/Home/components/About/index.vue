@@ -26,9 +26,6 @@
                     como o Space Apps Challenge e participações em hackathons, onde ajudo equipes a resolverem
                     problemas complexos e a transformarem ideias em experiências impactantes.
                     <br />
-                    Em minhas redes sociais, compartilho dicas para quem é novo ou quer migrar para a área, também
-                    falo sobre minhas vivências como uma autista na área de design. Acredito que o design centrado
-                    no futuro envolve entender e valorizar as diferentes perspectivas que constroem o mundo digital.
                     Com uma visão empática e uma abordagem centrada no ser humano, quero poder desenvolver soluções
                     inovadoras e inclusivas que respeitem a complexidade que é cada usuário.✨
                 </span>

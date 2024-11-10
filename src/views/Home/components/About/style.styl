@@ -94,16 +94,16 @@
     .presentation
         align-self: center;
         display: flex;
-        border-radius: 10px;
         position: absolute;
-        top: 465px;
+        top: 346px;
+        border-radius: 0px;
 
         .text
             display: flex;
             flex-direction: column;
-            max-width: 811px;
-            border-radius: 10px 0px 0px 10px;
-            padding: 62.5px 133px 62.5px 133px;
+            max-width: 292px;
+            border-radius: 0px;
+            padding: 49px 24px 35px 32px;
             background-color: #FAFAFA;
 
             .title
@@ -128,6 +128,7 @@
                 text-transform: none;
 
         .border
+            display: none
             width: 107.17px;
             border-radius: 0px 10px 10px 0px;
             background-color: #461841;
@@ -135,11 +136,12 @@
         
         .buttons
             display: flex;
-            justify-content: space-between;
             align-self: center;
-            width: 446px;
-            margin-top: 44px;
             text-transform: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 44px;
+            gap: 34px;
 
             a
                 width: 197px;
@@ -169,27 +171,38 @@
                 color: #FFFFFF;
 
         @media screen and (max-width: 600px)
-            top: 346px;
-            border-radius: 0px;
-
-            .text
-                max-width: 345px;
-                border-radius: 0px;
-                padding: 49px 24px 35px 32px;
-            
-            .border
-                display: none;
-            
+           
             .buttons
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 gap: 34px;
         
-        @media screen and (max-width: 360px)
+        @media screen and (min-width: 576px)
             .text
-                max-width: 292px;
+                max-width: 345px;
+        
+        @media screen and (min-width: 900px)
+            top: 465px;
+            border-radius: 10px;
+
+            .text
+                max-width: 811px;
+                border-radius: 10px 0px 0px 10px;
+                padding: 62.5px 133px 62.5px 133px;
+
+                .resume
+                    font-size: 20px;
+                    line-height: 30px;
+
+            .border
+                display: inline;
+            
+            .buttons
+                flex-direction: row;
+                justify-content: space-between;
+                width: 446px;
+                gap: auto;
 
     // $carousel-duration: 27s
     // $carousel-items: 7

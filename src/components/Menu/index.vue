@@ -7,6 +7,7 @@
             :page="item.page"
             :type="item.type"
             :name="item.name"
+            :submenus="item.submenus"
         />
     </div>
 </template>
@@ -40,7 +41,17 @@
             label: 'Cases',
             page: '/#cases',
             type: 'link',
-            name: 'cases'
+            name: 'cases',
+            submenus: [
+                {
+                    label: 'Trade+',
+                    page: '/cases/trade-plus'
+                },
+                {
+                    label: 'StartDev',
+                    page: '/cases/start-dev'
+                }
+            ]
         },
         {
             label: 'Contato',

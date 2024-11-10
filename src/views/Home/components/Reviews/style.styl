@@ -25,7 +25,12 @@
     .cards
         display: flex;
         gap: 58px;
-    
+        overflow: auto hidden;
+        width: 100%;
+
+        &::-webkit-scrollbar
+            display: none;
+
     @media screen and (max-width: 600px)
         margin-top: 71px;
         margin-bottom: 104px;

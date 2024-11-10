@@ -1,22 +1,62 @@
 .menu-item
-    line-height: 18.29px;
+    line-height: 20px;
     text-align: center;
-    padding: 26px;
+    padding: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     
     a
-        font-size: 15px;
+        font-size: 14px;
         color: black_1;
         display: inline-block;
         vertical-align: middle;
         text-decoration: none;
-    
+
+    .button
+        display: flex;
+        align-items: center;
+        margin: -10px -10px 0px;
+        padding: 10px 10px 0px;
+        width: 100%;
+
+        a
+            margin-right: 15px;
+        
+        span
+            display: flex;
+            align-items: center;
+        
+    & .selected
+        background-color: #f6f6f6;
+        padding-bottom: 10px;
+
+        @media screen and (min-width: 600px)
+            background-color: #FFFFFF;
+            margin-bottom: 0px;
+
+    .submenus
+        margin-bottom: -10px;
+
+        .submenu-item
+            padding: 5px;
+        
+        @media screen and (min-width: 600px)
+            width: 100%;
+            margin-top: 20px;
+            position: absolute;
+            background-color: #FFFFFF;
+
     .skate
         position: absolute;
         margin-top: 10px;
+        display: none;
 
-        @media screen and (max-width: 600px)
-            display: none;
+    @media screen and (min-width: 600px)
+        .skate
+            display: inline;
+
+    @media screen and (min-width: 1200px)
+        padding: 26px;
