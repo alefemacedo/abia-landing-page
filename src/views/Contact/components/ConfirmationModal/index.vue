@@ -103,10 +103,11 @@
         loaded.value = false;
         loading.value = true;
 
+        console.log(props.params.value)
         emailjs.send(
             'service_utb4g2w',
             'template_zzhn3le',
-            props.params,
+            props.params.value,
             { publicKey: '2AjaZnkV5b5D1z3I8' }
         )
         .then(
