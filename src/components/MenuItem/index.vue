@@ -4,8 +4,8 @@
             <div class="button" :class="{ selected: arrow }">
                 <a v-if="type === 'link'" :href="page" class="w600">{{ label }}</a>
                 <router-link v-else :to="page" class="w600">{{ label }}</router-link>
-                <span @click="toggleArrow">
-                    <Icon :icon="arrow ? 'ep:arrow-down-bold' : 'ep:arrow-up-bold'" />
+                <span @click="toggleArrow" :class="{ 'height-100': !arrow }">
+                    <Icon :icon="arrow ? 'ep:arrow-up-bold' : 'ep:arrow-down-bold'" />
                 </span>
                 <img
                     v-if="path.includes(name) || (path === '/' && name === 'home')"

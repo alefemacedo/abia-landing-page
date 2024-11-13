@@ -67,15 +67,12 @@
             realmente faz diferença no mercado de UX/UI.`
         },
         {
-            profile: 'img/dayana_guimaraes.jpeg',
-            name: 'Dayana Guimarães',
-            titles: 'Mediadora Cultural | Designer de Experiência | Turismóloga | Product Designer',
-            review: `Ábia é uma ótima mentora e companheira de estudos mesmo trabalhando em empresas
-            diferentes, ela está sempre disposta a me ajudar e orientar nos processos de design
-            system, desenvolvimento de personas e entrevistas com stakeholders do meu projeto. Ela
-            é super comunicativa e criativa. Está sempre estudando e passando o conhecimento adiante.
-            Ela é ótima no que se propõe a fazer e muito organizada no processo. Em seus projetos está
-            sempre presente a prática dos seus conhecimentos em fundamentos do UX.`
+            profile: 'img/rafael_menon_profile.jpg',
+            name: 'Rafael Rodrigo Menon',
+            titles: 'CTO da EME Softhouse',
+            review: `Seus serviços são excelentes, super atenciosa, tenta compreender ao máximo o que precisamos,
+            compreende o negócio e busca sempre desenvolver o trabalho alinhado com a expectativas. Super recomendo,
+            excelente profissional!`
         }
     ];
 </script>

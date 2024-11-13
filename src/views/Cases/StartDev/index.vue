@@ -96,8 +96,8 @@
                 <img src="@/assets/svg/stars_plus_2.svg" class="stars-plus-2" />
             </div>
 
-            <img src="@/assets/img/start_dev_research.png" style="max-width: 1023px;" />
-            <img src="@/assets/img/start_dev_research_table.png" style="max-width: 943px;" />
+            <img src="@/assets/img/start_dev_research.png" class="desk-research" />
+            <img src="@/assets/img/start_dev_research_table.png" class="research-table" />
         </div>
 
         <div class="style-guide section">
@@ -116,7 +116,7 @@
             </div>
             <br />
 
-            <img src="@/assets/img/start_dev_style-guide.jpg" style="max-width: 1118px;" />
+            <img src="@/assets/img/start_dev_style-guide.jpg" />
         </div>
 
         <div class="user-flow section">
@@ -133,7 +133,7 @@
             </div>
             <br />
 
-            <img src="@/assets/img/start_dev_user-flow.png" style="max-width: 914px;" />
+            <img src="@/assets/img/start_dev_user-flow.png" />
         </div>
 
         <div class="wireframe section">
@@ -166,8 +166,10 @@
             </div>
             <br />
 
-            <img src="@/assets/img/start_dev_wireframe_1.png" />
-            <img src="@/assets/svg/start_dev_wireframe_2.svg" />
+            <div class="images">
+                <img src="@/assets/svg/start_dev_wireframe_2.svg" />
+                <img src="@/assets/img/start_dev_wireframe_1.png" />
+            </div>
         </div>
 
         <div class="high-fidelity section">
@@ -184,7 +186,9 @@
             </div>
             <br />
 
-            <img src="@/assets/svg/start_dev_high-fidelity.svg" />
+            <div class="images">
+                <img src="@/assets/svg/start_dev_high-fidelity.svg" />
+            </div>
         </div>
 
         <div class="final-thoughts section">

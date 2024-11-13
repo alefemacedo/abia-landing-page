@@ -37,7 +37,6 @@
             font-weight: 500;
             font-size: 18px;
             text-transform: none;
-            gap: 15px;
         
         input, select, textarea
             font-family: 'Poppins', sans-serif;
@@ -46,6 +45,8 @@
             height: 46px;
             padding: 0px 26px;
             border-radius: 0px;
+            margin-top: 15px;
+            margin-bottom: 5px;
             
             ::placeholder
                 color: #B2B2B2;
@@ -80,7 +81,20 @@
             text-decoration: none;
             background-color: #8F2D83;
             border: none;
+
+            &:disabled
+                cursor: auto;
+                background-color: #e9c3e5;
     
+        .error
+            color: red;
+
+            input, select, textarea
+                border: 0.5px solid red;
+
+            .input-errors .error-msg
+                font-size: 12px;
+
     @media screen and (max-width: 600px)
         margin-top: 20px;
         margin-bottom: 90px;
