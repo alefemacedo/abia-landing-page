@@ -85,7 +85,6 @@
             () => props.show,
             (show, prevShow) => {
                 if (show !== prevShow && show) {
-                    console.log('open-modal', props.params.value);
                     send();
                 }
             }
@@ -103,7 +102,6 @@
         loaded.value = false;
         loading.value = true;
 
-        console.log(props.params.value)
         emailjs.send(
             'service_utb4g2w',
             'template_zzhn3le',
