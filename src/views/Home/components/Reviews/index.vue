@@ -1,31 +1,46 @@
 <template>
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <div class="title">
-            <img src="@/assets/img/wave.png" class="w400" />
-            <span>O que as pessoas dizem sobre mim</span>
+            <img class="lightning" src="@/assets/img/raio.png" />
+            <div class="text">
+                <span class="text-1 w900">Reviews</span>
+                <span class="text-2 w500">e depoimentos</span>
+            </div>
         </div>
 
-        <div class="cards">
-            <ui-review-card
-                v-for="(review, index) of reviews"
-                :value="review"
-                :key="index"
-            />
-        </div>
+        <swiper
+            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :slides-per-view="1"
+            :space-between="30"
+            :loop="true"
+            :autoplay="{
+                delay: 3000,
+                disableOnInteraction: false,
+            }"
+            :pagination="{
+                clickable: true,
+            }"
+            :navigation="true"
+            class="cards"
+        >
+            <swiper-slide v-for="(review, index) of reviews" :key="index">
+                <ui-review-card :value="review" />
+            </swiper-slide>
+        </swiper>
     </div>
 </template>
 
 <script setup>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
     import ReviewCard from './components/Card';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import 'swiper/css/navigation';
 
-    defineOptions({
-        name: 'ui-reviews',
-
-        components: {
-            'ui-review-card': ReviewCard
-        }
-    });
-
+    const SwiperAutoplay = Autoplay;
+    const SwiperPagination = Pagination;
+    const SwiperNavigation = Navigation;
 
     const reviews = [
         {
@@ -75,9 +90,23 @@
             excelente profissional!`
         }
     ];
+
+    defineOptions({
+        name: 'ui-reviews',
+        components: {
+            'ui-review-card': ReviewCard,
+            Swiper,
+            SwiperSlide
+        }
+    })
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
     @import './style.styl';
+    @import 'swiper/swiper.css';
+    @import 'swiper/modules/pagination/pagination.css';
 
+    .swiper-slide
+        display: flex;
+        justify-content: center;
 </style>

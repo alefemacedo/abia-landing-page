@@ -10,18 +10,41 @@
 
         <img src="@/assets/svg/heart.svg" class="heart" />
 
-        <div class="cards">
-            <ui-card
-                v-for="(item, index) of cases"
-                :key="index"
-                :value="item"
-            />
-        </div>
+        <swiper
+            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :slides-per-view="1"
+            :space-between="30"
+            :centeredSlides="true"
+            :loop="true"
+            :autoplay="{
+                delay: 3000,
+                disableOnInteraction: false,
+            }"
+            :pagination="{
+                clickable: true,
+            }"
+            :navigation="true"
+            class="cards"
+        >
+            <swiper-slide v-for="(item, index) of cases" :key="index">
+                <ui-card :value="item" />
+            </swiper-slide>
+        </swiper>
     </div>
 </template>
 
 <script setup>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
     import Card from './components/Card';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import 'swiper/css/navigation';
+
+    const SwiperAutoplay = Autoplay;
+    const SwiperPagination = Pagination;
+    const SwiperNavigation = Navigation;
+
     const cases = [
         {
             logo: 'svg/trade_plus_logo.svg',
@@ -39,14 +62,21 @@
 
     defineOptions({
         name: 'ui-cases',
-
         components: {
-            'ui-card': Card
+            'ui-card': Card,
+            Swiper,
+            SwiperSlide
         }
     })
 </script>
 
 <style lang="stylus">
     @import './style.styl';
+    @import 'swiper/swiper.css';
+    @import 'swiper/modules/pagination/pagination.css';
 
+
+    .swiper-slide
+        display: flex;
+        justify-content: center;
 </style>
