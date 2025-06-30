@@ -80,6 +80,62 @@
             "message": {
                 "required": "O campo mensagem não pode ser vazio"
             }
+        },
+        "confirmation": {
+            "title": "Envio de contato",
+            "sending": "Enviando...",
+            "success": "Enviado com sucesso!",
+            "failed": "Falha ao enviar.",
+            "close": "Finalizar",
+            "retry": "Tentar novamente"
+        }
+    },
+    "start_dev": {
+        "presentation": {
+            "description": "Startdev é uma plataforma de ensino para desenvolvedores, com o objetivo de ir além da simples educação. ",
+            "tool": "Ferramenta usada "
+        },
+        "contextualization": {
+            "title": "Entendendo a demanda",
+            "text": "Startdev é uma plataforma de ensino voltada para desenvolvedores, com o objetivo de ir além da simples educação. A ideia é criar uma comunidade forte e colaborativa, onde os usuários se ajudam a aprender juntos. A plataforma oferece uma experiência gamificada, permitindo que os participantes acumulem pontos sempre que ajudam uns aos outros, e que podem ser trocados por cursos ou descontos em novas compras dentro da plataforma.",
+            "objectives": {
+                "title": "Objetivos do projeto",
+                "build": "Criar uma plataforma para ensino de devs",
+                "bring": "Trazer uma forma de interação entre os estudantes",
+                "friendly": "Interface amigável e simples"
+            }
+        },
+        "continuing": {
+            "title": "E agora?",
+            "text1": "Meu primeiro passo foi revisar o documento com as especificações e expectativas para a plataforma. ",
+            "text2": "Anotei pontos de dúvida, curiosidades e criei um roteiro de entrevista para conversar com o cliente usando o Google Docs.",
+            "text3": " Durante a entrevista, procurei entender o que ele esperava tanto em termos de negócio quanto de visual. Perguntei se já havia uma paleta de cores definida e solicitei exemplos de sites com referências visuais que o cliente curtia."
+        },
+        "research": {
+            "title": "Pesquisa",
+            "text1": "Iniciei uma análise dos sites de concorrentes diretos e indiretos utilizando o ",
+            "text2": "Google Sheets",
+            "text3": " para organizar e detalhar as informações. Registrei os pontos de interesse e o que poderia ser relevante para o projeto, buscando referências que agregassem valor. O objetivo foi identificar oportunidades de melhoria e insights, usando essas plataformas como fonte de inspiração para desenvolver ",
+            "text4": "soluções mais inovadoras e eficientes",
+            "objectives": {
+                "title": "Durante esta fase de pesquisa, também procurei:",
+                "inspirations": "Inspirações visuais de plataformas de tecnologia",
+                "companies": "Empresas do mesmo ramo internacionais",
+                "platforms": "As plataformas que os desenvolvedores mais gostam e usam",
+                "references": "Referências de gamificação para ensino"
+            }
+        },
+        "style_guide": {
+            "title": "Style Guide e Persona",
+            "text1": "Nosso time de marketing já havia desenvolvido uma proto-persona para o projeto (infelizmente, não encontrei o arquivo para adicionar ao case). Utilizei essa direção inicial para dar início ao processo de design. ",
+            "text2": "O cliente já possuía a logomarca, paleta de cores e as fontes que desejava usar no projeto",
+            "text3": ". Com essas informações em mãos, meu primeiro passo antes de começar os wireframes foi definir um ",
+            "text4": "style guide no Figma",
+            "text5": ". Isso ajudou a padronizar os elementos visuais e facilitou o processo de criação e consistência ao longo do projeto."
+        },
+        "user_flow": {
+            "title": "User Flow",
+            "text": "Antes de iniciar o desenvolvimento dos wireframes, foi feito  o user flow. Esse passo foi importante para mapear de forma clara todas as etapas que o usuário percorreria dentro da plataforma. O user flow não só me ajudou a entender melhor a jornada do usuário, mas também a ter uma noção melhor  sobre o tempo de desenvolvimento e a quantidade de telas necessárias, permitindo um planejamento mais assertivo para o próximo estágio do projeto que é de fato o wireframe."
         }
     }
 }

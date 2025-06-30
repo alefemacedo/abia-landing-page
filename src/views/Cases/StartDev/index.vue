@@ -9,11 +9,11 @@
             <img src="@/assets/svg/start_dev_logo.svg" class="logo" />
 
             <span class="description">
-                Startdev é uma plataforma de ensino para desenvolvedores, com o objetivo de ir além da simples educação. 
+                {{ t('start_dev.presentation.description') }}
             </span>
 
             <span class="tools">
-                Ferramenta usada  
+                {{ t('start_dev.presentation.tool') }}
                 <img src="@/assets/svg/figma_logo.svg" />
             </span>
 
@@ -25,23 +25,17 @@
         </div>
 
         <div class="contextualization section">
-            <span class="title w700">Entendendo a demanda</span>
+            <span class="title w700">{{ t('start_dev.contextualization.title') }}</span>
             <br />
 
             <div class="text">
-                Startdev é uma plataforma de ensino voltada para desenvolvedores,
-                com o objetivo de ir além da simples educação. A ideia é criar uma
-                comunidade forte e colaborativa, onde os usuários se ajudam a aprender juntos.
-                A plataforma oferece uma experiência gamificada, permitindo que os
-                participantes acumulem pontos sempre que ajudam uns aos outros, e que
-                podem ser trocados por cursos ou descontos em novas compras dentro da
-                plataforma.
+                {{ t('start_dev.contextualization.text') }}
             </div>
 
             <img src="@/assets/svg/stars_plus.svg" class="stars-plus-1" />
 
             <div class="objectives">
-                <span class="title w700">Objetivos do projeto</span>
+                <span class="title w700"></span>
                 <div class="item-list">
                     <div
                         v-for="(objective, index) of objectives"
@@ -56,41 +50,34 @@
         </div>
 
         <div class="continuing section">
-            <span class="title w700">E agora?</span>
+            <span class="title w700">{{ t('start_dev.continuing.title') }}</span>
             <br />
 
             <div class="text">
-                Meu primeiro passo foi revisar o documento com as especificações e
-                expectativas para a plataforma. <span class="highlight w700">Anotei pontos
-                de dúvida, curiosidades e criei um roteiro de entrevista para
-                conversar com o cliente usando o google docs.</span> Durante a entrevista,
-                procurei entender o que ele esperava tanto em termos de negócio quanto
-                de visual. Perguntei se já havia uma paleta de cores definida e solicitei
-                exemplos de sites com referências visuais que o cliente curtia.
+                {{ t('start_dev.continuing.text1') }}
+                <span class='highlight w700'>{{ t('start_dev.continuing.text2') }}</span>
+                {{ t('start_dev.continuing.text3') }}
             </div>
         </div>
 
         <div class="research section">
-            <span class="title w700">Pesquisa</span>
+            <span class="title w700">{{ t('start_dev.research.title') }}</span>
             <br />
 
             <div class="text">
-                Iniciei uma análise dos sites de concorrentes diretos e indiretos utilizando
-                o <span class="highlight w700">Google Sheets</span> para organizar e detalhar as
-                informações. Registrei os pontos de interesse e o que poderia ser relevante
-                para o projeto, buscando referências que agregassem valor. O objetivo foi
-                identificar oportunidades de melhoria e insights, usando essas plataformas
-                como fonte de inspiração para desenvolver <span class="highlight w700">soluções
-                mais inovadoras e eficientes</span>.
+                {{ t('start_dev.research.text1') }}
+                <span class="highlight w700">{{ t('start_dev.research.text2') }}</span>
+                {{ t('start_dev.research.text3') }}
+                <span class="highlight w700">{{ t('start_dev.research.text4') }}</span>.
                 <br />
                 <br />
 
-                <span class="w700">Durante esta fase de pesquisa, também procurei:</span>
+                <span class="w700">{{ t('start_dev.research.objectives.title') }}</span>
                 <ul>
-                    <li>Inspirações visuais de plataformas de tecnologia</li>
-                    <li>Empresas do mesmo ramo internacionais</li>
-                    <li>As plataformas que os desenvolvedores mais gostam e usam</li>
-                    <li>Referências de gameficação para ensino</li>
+                    <li>{{ t('start_dev.research.objectives.inspirations') }}</li>
+                    <li>{{ t('start_dev.research.objectives.companies') }}</li>
+                    <li>{{ t('start_dev.research.objectives.platforms') }}</li>
+                    <li>{{ t('start_dev.research.objectives.references') }}</li>
                 </ul>
 
                 <img src="@/assets/svg/stars_plus_2.svg" class="stars-plus-2" />
@@ -101,18 +88,15 @@
         </div>
 
         <div class="style-guide section">
-            <span class="title w700">Style Guide e Persona</span>
+            <span class="title w700">{{ t('start_dev.style_guide.title') }}</span>
             <br />
 
             <div class="text">
-                Nosso time de marketing já havia desenvolvido uma proto-persona para o projeto
-                (infelizmente, não encontrei o arquivo para adicionar ao case). Utilizei essa
-                direção inicial para dar início ao processo de design. <br/>
-                <span class="highlight w700">O cliente já possuía a logomarca, paleta de cores e as
-                fontes que desejava usar no projeto</span>. Com essas informações em mãos, meu
-                primeiro passo antes de começar os wireframes foi definir um <span class="highlight w700">
-                style guide no Figma</span>. Isso ajudou a padronizar os elementos visuais e
-                facilitou o processo de criação e consistência ao longo do projeto.
+                {{ t('start_dev.style_guide.text1') }} <br/>
+                <span class="highlight w700">{{ t('start_dev.style_guide.text2') }}</span>
+                {{ t('start_dev.style_guide.text3') }}
+                <span class="highlight w700">{{ t('start_dev.style_guide.text4') }}</span>
+                {{ t('start_dev.style_guide.text5') }}
             </div>
             <br />
 
@@ -120,16 +104,11 @@
         </div>
 
         <div class="user-flow section">
-            <span class="title w700">User Flow</span>
+            <span class="title w700">{{ t('start_dev.user_flow.title') }}</span>
             <br />
 
             <div class="text">
-                Antes de iniciar o desenvolvimento dos wireframes, foi feito  o user flow. Esse
-                passo foi importante para mapear de forma clara todas as etapas que o usuário
-                percorreria dentro da plataforma. O user flow não só me ajudou a entender melhor
-                a jornada do usuário, mas também a ter uma noção melhor  sobre o tempo de
-                desenvolvimento e a quantidade de telas necessárias, permitindo um planejamento
-                mais assertivo para o próximo estágio do projeto que é de fato o wireframe.
+                {{ t('start_dev.user_flow.text') }}
             </div>
             <br />
 
@@ -302,6 +281,8 @@
     import MainTemplate from '@/templates/MainTemplate';
     import ImageModal from '@/components/ImageModal.vue';
     import { ref, computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
+
     import userFlowImage from '@/assets/img/start_dev_user-flow.png';
     import wireframeM1Image from '@/assets/img/start_dev_wireframe_mobile_1.png';
     import wireframeM2Image from '@/assets/img/start_dev_wireframe_mobile_2.png';
@@ -342,6 +323,8 @@
 
     import helpers from '@/mixins/helpers';
 
+    const { t } = useI18n();
+
     defineOptions({
         name: 'ui-start-dev-case',
 
@@ -353,20 +336,20 @@
         mixins: [helpers]
     });
 
-    const objectives = [
+    const objectives = computed(() => [
         {
             icon: 'svg/icon_build-tool.svg',
-            label: 'Criar uma plataforma para ensino de devs'
+            label: t('start_dev.contextualization.objectives.build')
         },
         {
             icon: 'svg/icon_muscle.svg',
-            label: 'Trazer uma forma de interação entre os estudantes'
+            label: t('start_dev.contextualization.objectives.bring')
         },
         {
             icon: 'svg/icon_noise-aware.svg',
-            label: 'Interface amigável e simples'
+            label: t('start_dev.contextualization.objectives.friendly')
         }
-    ];
+    ]);
 
     const showModal = ref(false);
     const currentImageIndex = ref(0);

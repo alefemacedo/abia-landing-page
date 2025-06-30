@@ -3,7 +3,7 @@
         <div v-if="show" class="modal-mask">
             <div class="confirmation-modal">
                 <div class="modal-header">
-                    <div class="title">Envio de contato</div>
+                    <div class="title">{{ t('contact.confirmation.title') }}</div>
                     <span class="close" @click="close">
                         X
                     </span>
@@ -11,16 +11,16 @@
                 
                 <div class="modal-content">
                     <span v-if="loading" class="sending">
-                        Enviando...
+                        {{ t('contact.confirmation.sending') }}
                     </span>
 
                     <div v-else class="sended">
                         <span v-if="success" class="success">
-                            Enviado com sucesso!
+                            {{ t('contact.confirmation.success') }}
                         </span>
 
                         <span v-else class="failed">
-                            Falha ao enviar.
+                            {{ t('contact.confirmation.failed') }}
                         </span>
                     </div>
 
@@ -39,11 +39,11 @@
                 <div class="modal-footer">
                     <div v-if="!loading" class="modal-action-buttons">
                         <button v-if="success" class="close" @click="close">
-                            Finalizar
+                            {{ t('contact.confirmation.close') }}
                         </button>
 
                         <button v-else class="retry" @click="send">
-                            Tentar novamente
+                            {{ t('contact.confirmation.retry') }}
                         </button>
                     </div>
                 </div>
@@ -55,6 +55,9 @@
 <script setup>
     import { onMounted, ref, useTemplateRef, watch } from 'vue';
     import emailjs from '@emailjs/browser';
+    import { useI18n } from 'vue-i18n';
+
+    const { t } = useI18n();
 
     defineOptions({
         name: 'ui-confirmation-modal'

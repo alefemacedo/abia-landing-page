@@ -80,6 +80,62 @@
             "message": {
                 "required": "The message field cannot be empty"
             }
+        },
+        "confirmation": {
+            "title": "Sending contact",
+            "sending": "Sending...",
+            "success": "Sent successfully!",
+            "failed": "Failed to send.",
+            "close": "Finish",
+            "retry": "Try again"
+        }
+    },
+    "start_dev": {
+        "presentation": {
+            "description": "Startdev is a teaching platform for developers, aiming to go beyond simple education. ",
+            "tool": "Used tool "
+        },
+        "contextualization": {
+            "title": "Understanding the requirements",
+            "text": "Startdev is a learning platform aimed at developers, with the goal of going beyond simple education. The idea is to create a strong and collaborative community, where users help each other learn together. The platform offers a gamified experience, allowing participants to accumulate points whenever they help each other, which can be exchanged for courses or discounts on new purchases within the platform.",
+            "objectives": {
+                "title": "Project objectives",
+                "build": "Create a platform for teaching devs",
+                "bring": "Bring a form of interaction between students",
+                "friendly": "User-friendly and simple interface"
+            }
+        },
+        "continuing": {
+            "title": "What now?",
+            "text1": "My first step was to review the document with the specifications and expectations for the platform. ",
+            "text2": "I wrote down points of doubt, curiosities and created an interview script to talk to the client using Google Docs.",
+            "text3": " During the interview, I tried to understand what he expected in terms of both business and visual aspects. I asked if he had already defined a color palette and asked for examples of websites with visual references that the client liked."
+        },
+        "research": {
+            "title": "Research",
+            "text1": "I started an analysis of the websites of direct and indirect competitors using the ",
+            "text2": "Google Sheets",
+            "text3": " to organize and detail the information. I recorded the points of interest and what could be relevant to the project, looking for references that added value. The objective was to identify opportunities for improvement and insights, using these platforms as a source of inspiration to develop ",
+            "text4": "more innovative and efficient solutions",
+            "objectives": {
+                "title": "During this research phase, I also looked for:",
+                "inspirations": "Visual inspirations from technology platforms",
+                "companies": "International companies in the same industry",
+                "platforms": "The platforms that developers like and use the most",
+                "references": "Gamification references for teaching"
+            }
+        },
+        "style_guide": {
+            "title": "Style Guide and Persona",
+            "text1": "Our marketing team had already developed a proto-persona for the project (unfortunately, I couldn't find the file to add to the case). I used this initial direction to start the design process. ",
+            "text2": "The client already had the logo, color palette and fonts they wanted to use in the project",
+            "text3": ". With this information in hand, my first step before starting the wireframes was to define a ",
+            "text4": "style guide in Figma",
+            "text5": ". This helped to standardize the visual elements and facilitated the creation process and consistency throughout the project."
+        },
+        "user_flow": {
+            "title": "User Flow",
+            "text": "Before starting to develop the wireframes, the user flow was created. This step was important to clearly map out all the steps that the user would go through within the platform. The user flow not only helped me to better understand the user's journey, but also to have a better idea of ​​the development time and the number of screens needed, allowing for more assertive planning for the next stage of the project, which is in fact the wireframe."
         }
     }
 }
