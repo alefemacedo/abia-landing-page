@@ -35,7 +35,7 @@
     
     button
         height: 69px;
-        padding: 9px 75px 9px 75px;
+        padding: 9px 75px;
         border-radius: 10px;
         background-color: #942F88;
         font-family: 'Poppins', sans-serif;
@@ -47,8 +47,12 @@
         align-items: center;
         justify-content: center;        
         cursor: pointer;
+        white-space: nowrap;
     
     @media screen and (max-width: 600px)
         width: 320px;
         height: 474px;
         padding: 13px 8px;
+
+        button
+            padding: 9px 50px;

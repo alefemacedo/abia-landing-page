@@ -11,7 +11,7 @@
         <img src="@/assets/svg/heart.svg" class="heart" />
 
         <swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :modules="[SwiperAutoplay, SwiperPagination]"
             :slides-per-view="1"
             :space-between="30"
             :centeredSlides="true"
@@ -23,7 +23,6 @@
             :pagination="{
                 clickable: true,
             }"
-            :navigation="true"
             class="cards"
         >
             <swiper-slide v-for="(item, index) of cases" :key="index">
@@ -35,15 +34,13 @@
 
 <script setup>
     import { Swiper, SwiperSlide } from 'swiper/vue';
-    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+    import { Autoplay, Pagination } from 'swiper/modules';
     import Card from './components/Card';
     import 'swiper/css';
     import 'swiper/css/pagination';
-    import 'swiper/css/navigation';
 
     const SwiperAutoplay = Autoplay;
     const SwiperPagination = Pagination;
-    const SwiperNavigation = Navigation;
 
     const cases = [
         {

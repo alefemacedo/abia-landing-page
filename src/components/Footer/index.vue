@@ -43,7 +43,7 @@
                 </span>
                 <span class="copyright w400">
                     <img src="@/assets/svg/copyright.svg" />
-                    2024
+                    2025
                 </span>
             </div>
         </div>

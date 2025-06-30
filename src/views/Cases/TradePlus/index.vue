@@ -117,7 +117,7 @@
                     <img src="@/assets/img/trade_plus_persona.png" style="border-radius: 53px;" />
                     <span class="quote w400">
                         "Busco crédito flexível que se adeque à minha loja, com taxas competitivas para um
-                        crescimento seguro”
+                        crescimento seguro"
                     </span>
                 </div>
 
@@ -302,7 +302,15 @@
             </div>
             <br />
 
-            <img src="@/assets/img/trade_plus_wireflow.png" />
+            <div class="image-wrapper" @click="openModal">
+                <img 
+                    src="@/assets/img/trade_plus_wireflow.png" 
+                    class="wireflow-image"
+                />
+                <div class="expand-overlay">
+                    <font-awesome-icon :icon="['fas', 'expand']" />
+                </div>
+            </div>
         </div>
 
         <div class="insights-improvements section">
@@ -411,10 +419,18 @@
             </div>
         </div>
     </div>
+    <image-modal
+        v-model="showModal"
+        :image-src="wireflowImage"
+        alt="Trade Plus Wireflow"
+    />
 </template>
 
 <script setup>
     import MainTemplate from '@/templates/MainTemplate';
+    import ImageModal from '@/components/ImageModal.vue';
+    import { ref } from 'vue';
+    import wireflowImage from '@/assets/img/trade_plus_wireflow.png';
 
     import helpers from '@/mixins/helpers';
 
@@ -442,9 +458,15 @@
             label: 'Trazer insigths de novas funcionalidades'
         }
     ];
+
+    const showModal = ref(false);
+
+    const openModal = () => {
+        showModal.value = true;
+    };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
     @import './style.styl';
 
 </style>

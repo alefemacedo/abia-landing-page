@@ -1,15 +1,14 @@
 <template>
     <div id="reviews" class="reviews">
         <div class="title">
-            <img class="lightning" src="@/assets/img/raio.png" />
+            <img class="wave" src="@/assets/svg/wave.svg" />
             <div class="text">
-                <span class="text-1 w900">Reviews</span>
-                <span class="text-2 w500">e depoimentos</span>
+                <span class="text-1 w400">O que as pessoas dizem sobre mim</span>
             </div>
         </div>
 
         <swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :modules="[SwiperAutoplay, SwiperPagination]"
             :slides-per-view="1"
             :space-between="30"
             :loop="true"
@@ -20,7 +19,6 @@
             :pagination="{
                 clickable: true,
             }"
-            :navigation="true"
             class="cards"
         >
             <swiper-slide v-for="(review, index) of reviews" :key="index">
@@ -32,15 +30,13 @@
 
 <script setup>
     import { Swiper, SwiperSlide } from 'swiper/vue';
-    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+    import { Autoplay, Pagination } from 'swiper/modules';
     import ReviewCard from './components/Card';
     import 'swiper/css';
     import 'swiper/css/pagination';
-    import 'swiper/css/navigation';
 
     const SwiperAutoplay = Autoplay;
     const SwiperPagination = Pagination;
-    const SwiperNavigation = Navigation;
 
     const reviews = [
         {

@@ -24,14 +24,20 @@
 
 
         <div class="scrolldown">
-            <img src="@/assets/svg/scrolldown.svg" />
+            <scroll-down-icon class="scroll-down-button" />
+            <!-- <img src="@/assets/svg/scrolldown.svg" /> -->
         </div>
     </div>
 </template>
 
 <script setup>
+    import ScrollDownIcon from '@/components/ScrollDownIcon.vue';
+
     defineOptions({
-        name: 'ui-about'
+        name: 'ui-about',
+        components: {
+            ScrollDownIcon
+        }
     })
 </script>
 

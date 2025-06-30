@@ -133,7 +133,15 @@
             </div>
             <br />
 
-            <img src="@/assets/img/start_dev_user-flow.png" />
+            <div class="image-wrapper user-flow" @click="openModal('userFlow')">
+                <img 
+                    src="@/assets/img/start_dev_user-flow.png" 
+                    class="flow-image"
+                />
+                <div class="expand-overlay">
+                    <font-awesome-icon :icon="['fas', 'expand']" />
+                </div>
+            </div>
         </div>
 
         <div class="wireframe section">
@@ -166,9 +174,32 @@
             </div>
             <br />
 
-            <div class="images">
-                <img src="@/assets/svg/start_dev_wireframe_2.svg" />
-                <img src="@/assets/img/start_dev_wireframe_1.png" />
+            <div class="wireframes-m">
+                <div
+                    v-for="index of Object.keys(wireframeMImages)"
+                    :key="index"
+                    class="wireframe-item"
+                    @click="openModal('wireframesM', index)"
+                >
+                    <img :src="`/src/assets/img/start_dev_wireframe_mobile_${parseInt(index)+1}.png`" />
+                    <div class="expand-overlay">
+                        <font-awesome-icon :icon="['fas', 'expand']" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="wireframes-d">
+                <div
+                    v-for="index of Object.keys(wireframeDImages)"
+                    :key="index"
+                    class="wireframe-item"
+                    @click="openModal('wireframesD', index)"
+                >
+                    <img :src="`/src/assets/img/start_dev_wireframe_desktop_${parseInt(index)+1}.png`" />
+                    <div class="expand-overlay">
+                        <font-awesome-icon :icon="['fas', 'expand']" />
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -186,8 +217,32 @@
             </div>
             <br />
 
-            <div class="images">
-                <img src="@/assets/svg/start_dev_high-fidelity.svg" />
+            <div class="wireframes-m">
+                <div
+                    v-for="index of Object.keys(wireframeHighMImages)"
+                    :key="index"
+                    class="wireframe-item"
+                    @click="openModal('wireframesHM', index)"
+                >
+                    <img :src="`/src/assets/img/start_dev_high-fidelity_mobile_${parseInt(index)+1}.png`" />
+                    <div class="expand-overlay">
+                        <font-awesome-icon :icon="['fas', 'expand']" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="wireframes-d">
+                <div
+                    v-for="index of Object.keys(wireframeHighDImages)"
+                    :key="index"
+                    class="wireframe-item"
+                    @click="openModal('wireframesHD', index)"
+                >
+                    <img :src="`/src/assets/img/start_dev_high-fidelity_desktop_${parseInt(index)+1}.png`" />
+                    <div class="expand-overlay">
+                        <font-awesome-icon :icon="['fas', 'expand']" />
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -235,10 +290,55 @@
             </div>
         </div>
     </div>
+
+    <image-modal
+        v-model="showModal"
+        :images="currentImages"
+        :initial-index="currentImageIndex"
+    />
 </template>
 
 <script setup>
     import MainTemplate from '@/templates/MainTemplate';
+    import ImageModal from '@/components/ImageModal.vue';
+    import { ref, computed } from 'vue';
+    import userFlowImage from '@/assets/img/start_dev_user-flow.png';
+    import wireframeM1Image from '@/assets/img/start_dev_wireframe_mobile_1.png';
+    import wireframeM2Image from '@/assets/img/start_dev_wireframe_mobile_2.png';
+    import wireframeM3Image from '@/assets/img/start_dev_wireframe_mobile_3.png';
+    import wireframeM4Image from '@/assets/img/start_dev_wireframe_mobile_4.png';
+    import wireframeM5Image from '@/assets/img/start_dev_wireframe_mobile_5.png';
+    import wireframeM6Image from '@/assets/img/start_dev_wireframe_mobile_6.png';
+    import wireframeD1Image from '@/assets/img/start_dev_wireframe_desktop_1.png';
+    import wireframeD2Image from '@/assets/img/start_dev_wireframe_desktop_2.png';
+    import wireframeD3Image from '@/assets/img/start_dev_wireframe_desktop_3.png';
+    import wireframeD4Image from '@/assets/img/start_dev_wireframe_desktop_4.png';
+    import wireframeD5Image from '@/assets/img/start_dev_wireframe_desktop_5.png';
+    import wireframeD6Image from '@/assets/img/start_dev_wireframe_desktop_6.png';
+    import wireframeHighM1Image from '@/assets/img/start_dev_high-fidelity_mobile_1.png';
+    import wireframeHighM2Image from '@/assets/img/start_dev_high-fidelity_mobile_2.png';
+    import wireframeHighM3Image from '@/assets/img/start_dev_high-fidelity_mobile_3.png';
+    import wireframeHighM4Image from '@/assets/img/start_dev_high-fidelity_mobile_4.png';
+    import wireframeHighM5Image from '@/assets/img/start_dev_high-fidelity_mobile_5.png';
+    import wireframeHighM6Image from '@/assets/img/start_dev_high-fidelity_mobile_6.png';
+    import wireframeHighM7Image from '@/assets/img/start_dev_high-fidelity_mobile_7.png';
+    import wireframeHighM8Image from '@/assets/img/start_dev_high-fidelity_mobile_8.png';
+    import wireframeHighM9Image from '@/assets/img/start_dev_high-fidelity_mobile_9.png';
+    import wireframeHighM10Image from '@/assets/img/start_dev_high-fidelity_mobile_10.png';
+    import wireframeHighM11Image from '@/assets/img/start_dev_high-fidelity_mobile_11.png';
+    import wireframeHighM12Image from '@/assets/img/start_dev_high-fidelity_mobile_12.png';
+    import wireframeHighD1Image from '@/assets/img/start_dev_high-fidelity_desktop_1.png';
+    import wireframeHighD2Image from '@/assets/img/start_dev_high-fidelity_desktop_2.png';
+    import wireframeHighD3Image from '@/assets/img/start_dev_high-fidelity_desktop_3.png';
+    import wireframeHighD4Image from '@/assets/img/start_dev_high-fidelity_desktop_4.png';
+    import wireframeHighD5Image from '@/assets/img/start_dev_high-fidelity_desktop_5.png';
+    import wireframeHighD6Image from '@/assets/img/start_dev_high-fidelity_desktop_6.png';
+    import wireframeHighD7Image from '@/assets/img/start_dev_high-fidelity_desktop_7.png';
+    import wireframeHighD8Image from '@/assets/img/start_dev_high-fidelity_desktop_8.png';
+    import wireframeHighD9Image from '@/assets/img/start_dev_high-fidelity_desktop_9.png';
+    import wireframeHighD10Image from '@/assets/img/start_dev_high-fidelity_desktop_10.png';
+    import wireframeHighD11Image from '@/assets/img/start_dev_high-fidelity_desktop_11.png';
+    import wireframeHighD12Image from '@/assets/img/start_dev_high-fidelity_desktop_12.png';
 
     import helpers from '@/mixins/helpers';
 
@@ -246,7 +346,8 @@
         name: 'ui-start-dev-case',
 
         components: {
-            'main-template': MainTemplate
+            'main-template': MainTemplate,
+            'image-modal': ImageModal
         },
 
         mixins: [helpers]
@@ -266,6 +367,85 @@
             label: 'Interface amigável e simples'
         }
     ];
+
+    const showModal = ref(false);
+    const currentImageIndex = ref(0);
+    const currentImageSet = ref('');
+
+    const userFlowImages = [
+        { src: userFlowImage, alt: 'Start Dev User Flow' }
+    ];
+
+    const wireframeMImages = [
+        { src: wireframeM1Image, alt: 'Start Dev Wireframe Mobile 1' },
+        { src: wireframeM2Image, alt: 'Start Dev Wireframe Mobile 2' },
+        { src: wireframeM3Image, alt: 'Start Dev Wireframe Mobile 4' },
+        { src: wireframeM4Image, alt: 'Start Dev Wireframe Mobile 4' },
+        { src: wireframeM5Image, alt: 'Start Dev Wireframe Mobile 5' },
+        { src: wireframeM6Image, alt: 'Start Dev Wireframe Mobile 6' }
+    ];
+
+    const wireframeHighMImages = [
+        { src: wireframeHighM1Image, alt: 'Start Dev High Fidelity Wireframe Mobile 1' },
+        { src: wireframeHighM2Image, alt: 'Start Dev High Fidelity Wireframe Mobile 2' },
+        { src: wireframeHighM3Image, alt: 'Start Dev High Fidelity Wireframe Mobile 4' },
+        { src: wireframeHighM4Image, alt: 'Start Dev High Fidelity Wireframe Mobile 4' },
+        { src: wireframeHighM5Image, alt: 'Start Dev High Fidelity Wireframe Mobile 5' },
+        { src: wireframeHighM6Image, alt: 'Start Dev High Fidelity Wireframe Mobile 6' },
+        { src: wireframeHighM7Image, alt: 'Start Dev High Fidelity Wireframe Mobile 7' },
+        { src: wireframeHighM8Image, alt: 'Start Dev High Fidelity Wireframe Mobile 8' },
+        { src: wireframeHighM9Image, alt: 'Start Dev High Fidelity Wireframe Mobile 9' },
+        { src: wireframeHighM10Image, alt: 'Start Dev High Fidelity Wireframe Mobile 10' },
+        { src: wireframeHighM11Image, alt: 'Start Dev High Fidelity Wireframe Mobile 11' },
+        { src: wireframeHighM12Image, alt: 'Start Dev High Fidelity Wireframe Mobile 12' }
+    ];
+
+    const wireframeDImages = [
+        { src: wireframeD1Image, alt: 'Start Dev Wireframe Desktop 1' },
+        { src: wireframeD2Image, alt: 'Start Dev Wireframe Desktop 2' },
+        { src: wireframeD3Image, alt: 'Start Dev Wireframe Desktop 4' },
+        { src: wireframeD4Image, alt: 'Start Dev Wireframe Desktop 4' },
+        { src: wireframeD5Image, alt: 'Start Dev Wireframe Desktop 5' },
+        { src: wireframeD6Image, alt: 'Start Dev Wireframe Desktop 6' }
+    ];
+
+    const wireframeHighDImages = [
+        { src: wireframeHighD1Image, alt: 'Start Dev High Fidelity Wireframe Desktop 1' },
+        { src: wireframeHighD2Image, alt: 'Start Dev High Fidelity Wireframe Desktop 2' },
+        { src: wireframeHighD3Image, alt: 'Start Dev High Fidelity Wireframe Desktop 4' },
+        { src: wireframeHighD4Image, alt: 'Start Dev High Fidelity Wireframe Desktop 4' },
+        { src: wireframeHighD5Image, alt: 'Start Dev High Fidelity Wireframe Desktop 5' },
+        { src: wireframeHighD6Image, alt: 'Start Dev High Fidelity Wireframe Desktop 6' },
+        { src: wireframeHighD7Image, alt: 'Start Dev High Fidelity Wireframe Desktop 7' },
+        { src: wireframeHighD8Image, alt: 'Start Dev High Fidelity Wireframe Desktop 8' },
+        { src: wireframeHighD9Image, alt: 'Start Dev High Fidelity Wireframe Desktop 9' },
+        { src: wireframeHighD10Image, alt: 'Start Dev High Fidelity Wireframe Desktop 10' },
+        { src: wireframeHighD11Image, alt: 'Start Dev High Fidelity Wireframe Desktop 11' },
+        { src: wireframeHighD12Image, alt: 'Start Dev High Fidelity Wireframe Desktop 12' }
+    ];
+
+    const currentImages = computed(() => {
+        switch (currentImageSet.value) {
+            case 'userFlow':
+                return userFlowImages;
+            case 'wireframesM':
+                return wireframeMImages;
+            case 'wireframesD':
+                return wireframeDImages
+            case 'wireframesHM':
+                return wireframeHighMImages;
+            case 'wireframesHD':
+                return wireframeHighDImages
+            default:
+                return [];
+        }
+    });
+
+    const openModal = (set, index = 0) => {
+        currentImageSet.value = set;
+        currentImageIndex.value = index;
+        showModal.value = true;
+    };
 </script>
 
 <style lang="stylus">
