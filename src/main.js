@@ -17,7 +17,10 @@ library.add(faExpand)
 library.add(faChevronLeft)
 library.add(faChevronRight)
 
+import i18n from './i18n'
+
 const app = createApp(App);
 app.component('font-awesome-icon', FontAwesomeIcon); // Register the component globally
 app.use(router);
+app.use(i18n);
 app.mount('#app');

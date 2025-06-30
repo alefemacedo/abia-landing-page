@@ -3,17 +3,16 @@
         <div class="contact-form">
             <div class="form-header">
                 <span class="title w500">
-                    Chega de conversa, vamos construir algo juntos!
+                    {{ t('contact.title') }}
                 </span>
                 <span class="subtitle">
-                    Pronto para dar vida à sua ideia? Se você tem um projeto incrível em mente e
-                    precisa de ajuda, conta comigo.
+                    {{ t('contact.subtitle') }}
                 </span>
             </div>
 
             <div class="form">
                 <label :class="{ error: v$.data.name.$errors.length }" for="name">
-                    Nome
+                    {{ t('contact.form.name') }}
                     <input v-model="v$.data.name.$model" id="name" type="text" />
                     <div
                         v-for="error of v$.data.name.$errors"
@@ -25,12 +24,12 @@
                 </label>
     
                 <label :class="{ error: v$.data.email.$errors.length }" for="email">
-                    E-mail
+                    {{ t('contact.form.email') }}
                     <input
                         v-model="v$.data.email.$model"
                         id="email"
                         type="email"
-                        placeholder="me diz seu melhor e-mail"
+                        :placeholder="t('contact.form.email_placeholder')"
                     />
                     <div
                         v-for="error of v$.data.email.$errors"
@@ -45,14 +44,14 @@
                     :class="{ error: v$.data.serviceType.$errors.length }"
                     for="service-type"
                 >
-                    Qual serviço está buscando?
+                    {{ t('contact.form.service_type') }}
                     <select v-model="v$.data.serviceType.$model" id="service-type">
                         <option :value="null" disabled selected>
-                            Selecione o tipo de serviço
+                            {{ t('contact.form.service_type_placeholder') }}
                         </option>
                         <option value="ux">UX</option>
                         <option value="ui">UI</option>
-                        <option value="research">Research (Pesquisa)</option>
+                        <option value="research">{{ t('contact.form.research') }}</option>
                         <option value="product_design">Product Design</option>
                     </select>
                     <div
@@ -65,12 +64,12 @@
                 </label>
     
                 <label :class="{ error: v$.data.message.$errors.length }" for="name">
-                    Mensagem
+                    {{ t('contact.form.message') }}
                     <textarea
                         v-model="v$.data.message.$model"
                         id="name"
                         type="textarea"
-                        placeholder="Me conta um pouco do seu projeto e solicite um orçamento"
+                        :placeholder="t('contact.form.message_placeholder')"
                     ></textarea>
                     <div
                         v-for="error of v$.data.message.$errors"
@@ -86,7 +85,7 @@
                     class="send-button"
                     @click="sendEmail"
                 >
-                    Enviar
+                    {{ t('contact.form.send_button') }}
                 </button>
             </div>
 
@@ -104,9 +103,12 @@
     import MainTemplate from '@/templates/MainTemplate';
     import ConfirmationModal from './components/ConfirmationModal';
 
-    import { reactive, ref } from 'vue';
+    import { computed, reactive, ref } from 'vue';
     import { useVuelidate } from '@vuelidate/core';
     import { required, email, helpers } from '@vuelidate/validators';
+    import { useI18n } from 'vue-i18n';
+
+    const { t } = useI18n();
     
     const serviceTypeLabels = {
         ux: 'UX',
@@ -134,24 +136,24 @@
         data: { ...defaultFormData }
     });
     const validType = (value) => [...Object.keys(serviceTypeLabels)].includes(value);
-    const rules = {
+    const rules = computed(() => ({
         data: {
             name: {
-                required: helpers.withMessage('O campo nome não pode ser vazio', required)
+                required: helpers.withMessage(() => t('contact.errors.name.required'), required)
             },
             email: {
-                required: helpers.withMessage('O campo e-mail não pode ser vazio', required),
-                email: helpers.withMessage('O campo e-mail não contém um valor válido', email)
+                required: helpers.withMessage(() => t('contact.errors.email.required'), required),
+                email: helpers.withMessage(() => t('contact.errors.email.email'), email)
             },
             serviceType: {
-                required: helpers.withMessage('O campo tipo de serviço não pode ser vazio', required),
-                validType: helpers.withMessage('O campo tipo de serviço apresenta um valor válido', validType)
+                required: helpers.withMessage(() => t('contact.errors.serviceType.required'), required),
+                validType: helpers.withMessage(() => t('contact.errors.serviceType.validType'), validType)
             },
             message: {
-                required: helpers.withMessage('O campo mensagem não pode ser vazio', required)
+                required: helpers.withMessage(() => t('contact.errors.message.required'), required)
             }
         }
-    };
+    }));
     const v$ = useVuelidate(rules, form);
     const showModal = ref(false);
     const params = reactive({});

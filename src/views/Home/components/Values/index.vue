@@ -6,13 +6,16 @@
 
         <div class="content">
             <div class="text w500">
-                Minha jornada é impulsionada pela paixão em criar soluções centradas no usuário e transformar em experiências incríveis
+                {{ t("values.text") }}
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+    import { useI18n } from 'vue-i18n';
+    const { t } = useI18n();
+
     defineOptions({
         name: 'ui-values'
     })

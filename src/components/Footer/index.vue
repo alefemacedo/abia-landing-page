@@ -5,8 +5,8 @@
 
             <div class="info">
                 <div class="title w400">
-                    <span>Vamos trabalhar juntos </span>
-                    <span>em seu próximo produto.</span>
+                    <span>{{t("footer.title1")}}</span>
+                    <span>{{t("footer.title2")}}</span>
                 </div>
 
                 <div class="contact">
@@ -39,7 +39,7 @@
             <div class="text">
                 <span class="author w700">Ábia Bognola</span>
                 <span class="quote-text w400">
-                    Transformando Ideias em Experiências (inclusive as minhas)
+                    {{ t("footer.quote") }}
                 </span>
                 <span class="copyright w400">
                     <img src="@/assets/svg/copyright.svg" />
@@ -51,6 +51,9 @@
 </template>
 
 <script setup>
+    import { useI18n } from 'vue-i18n';
+    const { t } = useI18n()
+
     defineOptions({
         name: 'ui-footer'
     })

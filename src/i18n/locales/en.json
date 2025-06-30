@@ -1,0 +1,85 @@
+{
+    "locale": {
+        "en": "EN",
+        "pt": "BR"
+    },
+    "nav": {
+        "home": "Home",
+        "about_me": "About me",
+        "cases": "Cases",
+        "trade_plus": "Trade+",
+        "start_dev": "StartDev",
+        "contact": "Contact"
+    },
+    "footer": {
+        "title1": "Let's work together ",
+        "title2": "in your next product.",
+        "quote": "Turning Ideas into Experiences (including mine)"
+    },
+    "home": {
+        "title": "Meet your next Product Designer"
+    },
+    "about": {
+        "resume1": "UX Designer with over 3 years of experience, I am passionate about creating solutions that go beyond aesthetics and prioritize accessibility and inclusion. My journey includes mentoring at events such as the Space Apps Challenge and participating in hackathons, where I help teams solve complex problems and transform ideas into impactful experiences.",
+        "resume2": "With an empathetic vision and a human-centered approach, I want to be able to develop innovative and inclusive solutions that respect the complexity of each user.",
+        "linkedin": "Open Linkedin",
+        "resume_button": "Open Resume"
+    },
+    "values": {
+        "text": "My journey is driven by a passion for creating user-centric solutions and transforming them into amazing experiences."
+    },
+    "accessibility": {
+        "text": "And mainly accessible"
+    },
+    "cases": {
+        "title": "and works",
+        "see_more": "See more"
+    },
+    "reviews": {
+        "titles": {
+            "moises": "Partner and Independent Board Member & Advisor Board {'|'} IT Director {'|'} CTO",
+            "rodolfo": "Product Design Coordinator {'|'} Product Designer Lead {'|'} Product Designer Sr",
+            "andreia": "Product Manager {'|'} Design Thinking {'|'} UX {'|'} Chief Happiness Officer {'|'} OKRCP {'|'} CSPO {'|'} CSM {'|'} Digital Channels",
+            "vitor": "Senior Software Engineer {'|'} Senior Front-end Developer {'|'} React {'|'} Web3 {'|'} TypeScript {'|'} Node.js",
+            "rafael": "CTO of EME Softhouse"
+        },
+        "texts": {
+            "moises": "A super talented professional, with a quick learning ability, able to understand and capture needs clearly and effectively. A professional who is easy to adapt and manage, with exemplary dedication. I recommend her as an excellent professional.",
+            "rodolfo": "With a unique personality, Ábia is a very dedicated professional, not only in her value deliveries, but also with her dedication to the business area and UX culture, she is always updating herself, motivating herself to be better. One of the characteristics that most draws attention in her profile is her ability to focus and deliver quality products very quickly. I had the great pleasure of working with her and I recommend her without hesitation for any UX&UI position.",
+            "andreia": "Ábia works very quickly, is always very dedicated, collaborative and participative, always giving ideas and expressing sincere opinions. Deliveries are made on time and as agreed. If the user requests adjustments, they are made very quickly. Not to mention that she always brings new ideas and is always looking to solve problems together with the team.",
+            "vitor": "Ábia is a person with a lot of ambition for knowledge, one of the people who is most dedicated to learning and improving her skills. In the experience I had with her, she always seemed enthusiastic about the area and new developments, a professional who really makes a difference in the UX/UI market.",
+            "rafael": "Her deliveries are excellent, she is super attentive, she tries to understand as much as possible what we need, she understands the business and always seeks to develop the work in line with expectations. I highly recommend her, an excellent professional!"
+        }
+    },
+    "contact": {
+        "title": "Enough talk, let's build something together!",
+        "subtitle": "Ready to bring your idea to life? If you have an amazing project in mind and need help, count on me.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "email_placeholder": "tell me your best email",
+            "service_type": "What service are you looking for?",
+            "service_type_placeholder": "Select the service type",
+            "research": "Research",
+            "message": "Message",
+            "message_placeholder": "Tell me a little about your project and request a quote",
+            "send_button": "Send"
+        },
+        "errors": {
+            "name": {
+                "required": "The name field cannot be empty"
+            },
+            "email": {
+                "required": "The email field cannot be empty",
+                "email": "The email field does not contain a valid value"
+            },
+            "serviceType": {
+                "required": "The service type field cannot be empty",
+                "validType": "The service type field has a valid value"
+            },
+            "message": {
+                "required": "The message field cannot be empty"
+            }
+        }
+    }
+}

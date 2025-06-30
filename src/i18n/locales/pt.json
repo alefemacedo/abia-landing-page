@@ -1,0 +1,85 @@
+{
+    "locale": {
+        "en": "EN",
+        "pt": "BR"
+    },
+    "nav": {
+        "home": "Início",
+        "about_me": "Sobre mim",
+        "cases": "Cases",
+        "trade_plus": "Trade+",
+        "start_dev": "StartDev",
+        "contact": "Contato"
+    },
+    "footer": {
+        "title1": "Vamos trabalhar juntos ",
+        "title2": "em seu próximo produto.",
+        "quote": "Transformando Ideias em Experiências (inclusive as minhas)"
+    },
+    "home": {
+        "title": "Conheça a sua próxima Designer de Produto"
+    },
+    "about": {
+        "resume1": "UX Designer com mais de 3 anos de experiência, sou apaixonada por criar soluções que vão além da estética e priorizam a acessibilidade e a inclusão. Minha jornada inclui mentorias em eventos como o Space Apps Challenge e participações em hackathons, onde ajudo equipes a resolverem problemas complexos e a transformarem ideias em experiências impactantes.",
+        "resume2": "Com uma visão empática e uma abordagem centrada no ser humano, quero poder desenvolver soluções inovadoras e inclusivas que respeitem a complexidade que é cada usuário.",
+        "linkedin": "Ver Linkedin",
+        "resume_button": "Ver Currículo"
+    },
+    "values": {
+        "text": "Minha jornada é impulsionada pela paixão em criar soluções centradas no usuário e transformar em experiências incríveis"
+    },
+    "accessibility": {
+        "text": "E principalmente acessíveis"
+    },
+    "cases": {
+        "title": "e trabalhos",
+        "see_more": "Ver mais"
+    },
+    "reviews": {
+        "titles": {
+            "moises": "Partner and Independent Board Member & Advisor Board {'|'} IT Director {'|'} CTO",
+            "rodolfo": "Product Design Coordenador {'|'} Product Designer Lead {'|'} Product Designer Sr",
+            "andreia": "Product Manager {'|'} Design Thinking {'|'} UX {'|'} Chief Happiness Officer {'|'} OKRCP {'|'} CSPO {'|'} CSM {'|'} Canais Digitais",
+            "vitor": "Senior Software Engineer {'|'} Senior Front-end Developer {'|'} React {'|'} Web3 {'|'} TypeScript {'|'} Node.js",
+            "rafael": "CTO da EME Softhouse"
+        },
+        "texts": {
+            "moises": "Uma profissional super talentosa, com uma capacidade de aprendizagem rápida, consegue entender e capitar as necessidades de forma clara e eficaz .Uma profissional de fácil adaptação e gestão, com uma dedicação exemplar. Recomendo ela como uma excelente profissional.",
+            "rodolfo": "Dona de uma personalidade única, a Ábia é uma profissional muito dedicada, não somente em suas entregas de valor, mas com sua dedicação a área de negócio e cultura de UX, está sempre se atualizando, se motivando a ser melhor. Uma das características que mais chama atenção no seu perfil, e sua capacidade de focar e entregar produtos de qualidade e com muita rapidez. Tive o grande prazer em trabalhar com ela e recomendo-a sem hesitar para qualquer vaga de UX&UI.",
+            "andreia": "Ábia atua de forma muito ágil, sempre muito dedicada, colaborativa e participativa, sempre dando ideias e expressando opiniões sinceras. As entregas acontecem na data e dentro do combinado. Se o usuário pede ajustes, sao feitos muito rapidamente. Sem contar que sempre traz novas ideias e está sempre buscando resolver os problemas junto com o time.",
+            "vitor": "A Ábia é uma pessoa com muita ambição de conhecimento, uma das pessoas que mais se dedica em aprender e melhorar suas skills. Na experiência que tive ao seu lado sempre se mostrou entusiasmada com área e com novos desenvolvimentos, uma profissional que realmente faz diferença no mercado de UX/UI.",
+            "rafael": "Seus serviços são excelentes, super atenciosa, tenta compreender ao máximo o que precisamos, compreende o negócio e busca sempre desenvolver o trabalho alinhado com a expectativas. Super recomendo, excelente profissional!"
+        }
+    },
+    "contact": {
+        "title": "Chega de conversa, vamos construir algo juntos!",
+        "subtitle": "Pronto para dar vida à sua ideia? Se você tem um projeto incrível em mente e precisa de ajuda, conta comigo.",
+        "form": {
+            "name": "Nome",
+            "email": "E-mail",
+            "email_placeholder": "me diz seu melhor e-mail",
+            "service_type": "Qual serviço está buscando?",
+            "service_type_placeholder": "Selecione o tipo de serviço",
+            "research": "Research (Pesquisa)",
+            "message": "Mensagem",
+            "message_placeholder": "Me conta um pouco do seu projeto e solicite um orçamento",
+            "send_button": "Enviar"
+        },
+        "errors": {
+            "name": {
+                "required": "O campo nome não pode ser vazio"
+            },
+            "email": {
+                "required": "O campo e-mail não pode ser vazio",
+                "email": "O campo e-mail não contém um valor válido"
+            },
+            "serviceType": {
+                "required": "O campo tipo de serviço não pode ser vazio",
+                "validType": "O campo tipo de serviço apresenta um valor válido"
+            },
+            "message": {
+                "required": "O campo mensagem não pode ser vazio"
+            }
+        }
+    }
+}

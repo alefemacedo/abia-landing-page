@@ -12,7 +12,7 @@
         </div>
     
         <button @click="router.push(value.link)" class="w400">
-            Ver mais
+            {{ t("cases.see_more") }}
             <img src="@/assets/svg/click_icon.svg" />
         </button>
     </div>
@@ -21,6 +21,9 @@
 <script setup>
     import helpers from '@/mixins/helpers';
     import router from '@/router';
+    import { useI18n } from 'vue-i18n';
+
+    const { t } = useI18n();
 
     defineOptions({
         name: 'ui-card',

@@ -4,7 +4,7 @@
             <img class="lightning" src="@/assets/img/raio.png" />
             <div class="text">
                 <span class="text-1 w900">Cases</span>
-                <span class="text-2 w500">e trabalhos</span>
+                <span class="text-2 w500">{{ t("cases.title") }}</span>
             </div>
         </div>
 
@@ -35,12 +35,14 @@
 <script setup>
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import { Autoplay, Pagination } from 'swiper/modules';
+    import { useI18n } from 'vue-i18n';
     import Card from './components/Card';
     import 'swiper/css';
     import 'swiper/css/pagination';
 
     const SwiperAutoplay = Autoplay;
     const SwiperPagination = Pagination;
+    const { t } = useI18n();
 
     const cases = [
         {

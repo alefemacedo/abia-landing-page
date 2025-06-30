@@ -21,7 +21,8 @@
 <script setup>
     import MenuItem from '../MenuItem';
 
-    import { ref } from 'vue';
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n'
 
     defineOptions({
         name: 'ui-navbar-menu',
@@ -32,38 +33,39 @@
     })
 
     const emit = defineEmits(['toggleNavbar']);
+    const { t } = useI18n()
 
-    const items = ref([
+    const items = computed(() => [
         {
-            label: 'Início',
+            label: t('nav.home'),
             page: '/#home',
             type: 'link',
             name: 'home'
         },
         {
-            label: 'Sobre mim',
+            label: t('nav.about_me'),
             page: '/#about',
             type: 'link',
             name: 'about'
         },
         {
-            label: 'Cases',
+            label: t('nav.cases'),
             page: '/#cases',
             type: 'link',
             name: 'cases',
             submenus: [
                 {
-                    label: 'Trade+',
+                    label: t('nav.trade_plus'),
                     page: '/cases/trade-plus'
                 },
                 {
-                    label: 'StartDev',
+                    label: t('nav.start_dev'),
                     page: '/cases/start-dev'
                 }
             ]
         },
         {
-            label: 'Contato',
+            label: t('nav.contact'),
             page: '/contact',
             type: 'router',
             name: 'contact'

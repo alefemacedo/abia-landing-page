@@ -12,8 +12,11 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue';
+    import { computed } from 'vue';
     import MenuItem from '../MenuItem';
+    import { useI18n } from 'vue-i18n'
+
+    const { t } = useI18n()
 
     defineOptions({
         name: 'ui-menu',
@@ -23,27 +26,27 @@
         }
     });
 
-    const items = ref([
+    const items = computed(() => [
         {
-            label: 'Início',
+            label: t('nav.home'),
             page: '/#home',
             type: 'link',
             name: 'home'
         },
         {
-            label: 'Sobre mim',
+            label: t('nav.about_me'),
             page: '/#about',
             type: 'link',
             name: 'about'
         },
         {
-            label: 'Cases',
+            label: t('nav.cases'),
             page: '/#cases',
             type: 'link',
             name: 'cases'
         },
         {
-            label: 'Contato',
+            label: t('nav.contact'),
             page: '/contact',
             type: 'router',
             name: 'contact'

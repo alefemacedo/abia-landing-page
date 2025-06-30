@@ -7,7 +7,7 @@
 
             <div class="text">
                 <h1 class="w500">
-                    Conheça a sua próxima Designer de Produto
+                    {{ t('home.title') }}
                 </h1>
             </div>
 
@@ -25,13 +25,14 @@
 
         <div class="scrolldown">
             <scroll-down-icon class="scroll-down-button" />
-            <!-- <img src="@/assets/svg/scrolldown.svg" /> -->
         </div>
     </div>
 </template>
 
 <script setup>
     import ScrollDownIcon from '@/components/ScrollDownIcon.vue';
+    import { useI18n } from 'vue-i18n';
+    const { t } = useI18n()
 
     defineOptions({
         name: 'ui-about',

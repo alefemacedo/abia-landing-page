@@ -21,19 +21,15 @@
                 </div>
 
                 <span class="resume">
-                    UX Designer com mais de 3 anos de experiência, sou apaixonada por criar soluções que vão além
-                    da estética e priorizam a acessibilidade e a inclusão. Minha jornada inclui mentorias em eventos
-                    como o Space Apps Challenge e participações em hackathons, onde ajudo equipes a resolverem
-                    problemas complexos e a transformarem ideias em experiências impactantes.
+                    {{ t("about.resume1") }}
                     <br />
-                    Com uma visão empática e uma abordagem centrada no ser humano, quero poder desenvolver soluções
-                    inovadoras e inclusivas que respeitem a complexidade que é cada usuário.✨
+                    {{ t("about.resume2") }}✨
                 </span>
 
                 <div class="buttons">
                     <a href="https://www.linkedin.com/in/%C3%A1bia-bognola-8a638288/" class="linkedin">
                         <img src="@/assets/svg/linkedin_icon.svg" />
-                        Ver Linkedin
+                        {{ t("about.linkedin") }}
                     </a>
 
                     <a
@@ -42,7 +38,7 @@
                         class="resume-button"
                     >
                         <img src="@/assets/svg/resume_icon.svg" />
-                        Ver Currículo
+                        {{ t("about.resume_button") }}
                     </a>
                 </div>
             </div>
@@ -53,6 +49,8 @@
 
 <script setup>
     import helpers from '@/mixins/helpers';
+    import { useI18n } from 'vue-i18n';
+    const { t } = useI18n()
 
     defineOptions({
         name: 'ui-about',
