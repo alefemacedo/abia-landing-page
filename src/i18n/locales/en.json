@@ -136,6 +136,47 @@
         "user_flow": {
             "title": "User Flow",
             "text": "Before starting to develop the wireframes, the user flow was created. This step was important to clearly map out all the steps that the user would go through within the platform. The user flow not only helped me to better understand the user's journey, but also to have a better idea of ​​the development time and the number of screens needed, allowing for more assertive planning for the next stage of the project, which is in fact the wireframe."
+        },
+        "wireframe": {
+            "title": "Wireframe",
+            "text1": "Once we had defined the user flow and had a clear vision of the user journey, the next step was to work on the wireframes before arriving at a final version of the design. ",
+            "text2": "I strategically chose to use wireframes at this stage",
+            "text3": ", as they allow you to visualize the structure and functionality of the platform without focusing so much on the visual details. This helped me to:",
+            "objectives": {
+                "intuitive1": "Ensure the layout was intuitive and functional, ensuring all user interactions were aligned with the ",
+                "intuitive2": "project objectives",
+                "fast": "Make quick, iterative adjustments to the navigation flow without committing time to visual details that would only be worked on later.",
+                "align1": "Align ",
+                "align2": "usability and functionality expectations",
+                "align3": " with the client before moving on to the final design."
+            }
+        },
+        "high_fidelity": {
+            "title": "High fidelity",
+            "text1": "After validation with the client, I increased the fidelity of the wireframes, incorporating more visual and interactive details. ",
+            "text2": "Additionally, I suggested implementing the platform in dark mode, taking into account that our main target audience is developers, who generally prefer interfaces with less brightness, making the experience more comfortable and aligned with their preferences."
+        },
+        "final_thoughts": {
+            "title": "Final Thoughts",
+            "text": "This was a really fun project to work on, especially because I was challenged by the short deadline — around 20 days — to deliver both the web and mobile versions.",
+            "thought1": {
+                "title": "Time Management and Creativity:",
+                "item1": "I managed other projects in parallel and assisted the intern.",
+                "item2": "I improved my time management and used my creativity effectively in UI."
+            },
+            "thought2": {
+                "title": "Gamification:",
+                "item1": "We implement incentives that reward students for interactions.",
+                "item2": "Rewards for completing courses, rating lessons, responding to assignments, and interacting in forums."
+            },
+            "thought3": {
+                "title": "Customer Satisfaction:",
+                "item": "The platform has not yet been launched, but the client was extremely pleased with the result."
+            },
+            "thought4": {
+                "title": "Personal and Professional Fulfillment:",
+                "item": "The experience of transforming ideas into products brought great personal and professional fulfillment."
+            }
         }
     }
 }

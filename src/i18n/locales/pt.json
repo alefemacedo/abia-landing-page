@@ -136,6 +136,47 @@
         "user_flow": {
             "title": "User Flow",
             "text": "Antes de iniciar o desenvolvimento dos wireframes, foi feito  o user flow. Esse passo foi importante para mapear de forma clara todas as etapas que o usuário percorreria dentro da plataforma. O user flow não só me ajudou a entender melhor a jornada do usuário, mas também a ter uma noção melhor  sobre o tempo de desenvolvimento e a quantidade de telas necessárias, permitindo um planejamento mais assertivo para o próximo estágio do projeto que é de fato o wireframe."
+        },
+        "wireframe": {
+            "title": "Wireframe",
+            "text1": "Depois de definir o user flow e ter uma visão clara da jornada do usuário, o próximo passo foi trabalhar nos wireframes antes de chegar a uma versão final do design. ",
+            "text2": "Optei estrategicamente por usar wireframes nesse estágio",
+            "text3": ", pois eles permitem visualizar a estrutura e a funcionalidade da plataforma sem focar tanto nos detalhes visuais. Isso me ajudou a:",
+            "objectives": {
+                "intuitive1": "Garantir que o layout fosse intuitivo e funcional, assegurando que todas as interações do usuário estivessem alinhadas com os ",
+                "intuitive2": "objetivos do projeto",
+                "fast": "Fazer ajustes rápidos e iterativos no fluxo de navegação, sem o comprometimento de tempo com detalhes visuais que só seriam trabalhados mais tarde.",
+                "align1": "Alinhar com o cliente ",
+                "align2": "as expectativas de usabilidade e funcionalidades",
+                "align3": ", antes de seguir para o design final."
+            }
+        },
+        "high_fidelity": {
+            "title": "Alta fidelidade",
+            "text1": "Após a validação com o cliente, aumentei a fidelidade dos wireframes, incorporando mais detalhes visuais e interativos. ",
+            "text2": "Além disso, sugeri a implementação da plataforma em dark mode, levando em consideração que nosso público-alvo principal são desenvolvedores, que geralmente preferem interfaces com menos luminosidade, tornando a experiência mais confortável e alinhada às suas preferências."
+        },
+        "final_thoughts": {
+            "title": "Reflexões finais",
+            "text": "Este foi um projeto muito divertido de trabalhar, especialmente porque me desafiou pelo prazo curto — cerca de 20 dias — para entregar tanto a versão web quanto a mobile.",
+            "thought1": {
+                "title": "Gestão de Tempo e Criatividade:",
+                "item1": "Gerenciei outros projetos em paralelo e auxiliei a estagiária.",
+                "item2": "Aprimorei minha gestão de tempo e utilizei minha criatividade de forma eficaz no UI."
+            },
+            "thought2": {
+                "title": "Gamificação:",
+                "item1": "Implementamos incentivos que bonificam os alunos por interações.",
+                "item2": "Recompensas por completar cursos, avaliar aulas, responder atividades e interagir nos fóruns."
+            },
+            "thought3": {
+                "title": "Satisfação do Cliente:",
+                "item": "A plataforma ainda não foi lançada, mas o cliente ficou extremamente satisfeito com o resultado."
+            },
+            "thought4": {
+                "title": "Realização Pessoal e Profissional:",
+                "item": "A experiência de transformar ideias em produtos trouxe grande realização pessoal e profissional."
+            }
         }
     }
 }

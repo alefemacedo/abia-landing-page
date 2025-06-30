@@ -124,30 +124,26 @@
         </div>
 
         <div class="wireframe section">
-            <span class="title w700">Wireframe</span>
+            <span class="title w700">{{ t('start_dev.wireframe.title') }}</span>
             <br />
 
             <div class="text">
-                Depois de definir o user flow e ter uma visão clara da jornada do usuário, o
-                próximo passo foi trabalhar nos wireframes antes de chegar a uma versão final
-                do design. Optei estrategicamente por usar wireframes nesse estágio, pois
-                eles permitem visualizar a estrutura e a funcionalidade da plataforma sem
-                focar tanto nos detalhes visuais. Isso me ajudou a:
+                {{ t('start_dev.wireframe.text1') }}
+                <span class="highlight w700">{{ t('start_dev.wireframe.text2') }}</span>
+                {{ t('start_dev.wireframe.text3') }}
 
                 <ul>
                     <li>
-                        Garantir que o layout fosse intuitivo e funcional, assegurando que
-                        todas as interações do usuário estivessem alinhadas com os objetivos do
-                        projeto.
+                        {{ t('start_dev.wireframe.objectives.intuitive1') }}
+                        <span class="highlight w700">{{ t('start_dev.wireframe.objectives.intuitive2') }}</span>.
                     </li>
                     <li>
-                        Fazer ajustes rápidos e iterativos no fluxo de navegação, sem o
-                        comprometimento de tempo com detalhes visuais que só seriam trabalhados
-                        mais tarde.
+                        {{ t('start_dev.wireframe.objectives.fast') }}
                     </li>
                     <li>
-                        Alinhar com o cliente as expectativas de usabilidade e funcionalidades,
-                        antes de seguir para o design final.
+                        {{ t('start_dev.wireframe.objectives.align1') }}
+                        <span class="highlight w700">{{ t('start_dev.wireframe.objectives.align2') }}</span>
+                        {{ t('start_dev.wireframe.objectives.align3') }}
                     </li>
                 </ul>
             </div>
@@ -183,16 +179,15 @@
         </div>
 
         <div class="high-fidelity section">
-            <span class="title w700">Alta fidelidade</span>
+            <span class="title w700">
+                {{ t('start_dev.high_fidelity.title') }}
+            </span>
             <br />
 
             <div class="text">
-                Após a validação com o cliente, aumentei a fidelidade dos wireframes, incorporando
-                mais detalhes visuais e interativos. <br />
-                Além disso, sugeri a implementação da plataforma em dark mode, levando em consideração
-                que nosso público-alvo principal são desenvolvedores, que geralmente preferem
-                interfaces com menos luminosidade, tornando a experiência mais confortável e alinhada
-                às suas preferências.
+                {{ t('start_dev.high_fidelity.text1') }}
+                <br />
+                {{ t('start_dev.high_fidelity.text2') }}
             </div>
             <br />
 
@@ -226,44 +221,43 @@
         </div>
 
         <div class="final-thoughts section">
-            <span class="title2 w700">Reflexões finais</span>
+            <span class="title2 w700">{{ t('start_dev.final_thoughts.title') }}</span>
             <br />
 
             <div class="text">
-                Este foi um projeto muito divertido de trabalhar, especialmente porque me desafiou
-                pelo prazo curto — cerca de 20 dias — para entregar tanto a versão web quanto a mobile.
+                {{ t('start_dev.final_thoughts.text') }}
                 <br />    
-                <span class="highlight w700">Gestão de Tempo e Criatividade:</span>
+                <span class="highlight w700">{{ t('start_dev.final_thoughts.thought1.title') }}</span>
                 <ul>
-                    <li>Gerenciei outros projetos em paralelo e auxiliei a estagiária.</li>
                     <li>
-                        Aprimorei minha gestão de tempo e utilizei minha criatividade de forma
-                        eficaz no UI.
+                        {{ t('start_dev.final_thoughts.thought1.item1') }}
+                    </li>
+                    <li>
+                        {{ t('start_dev.final_thoughts.thought1.item2') }}
                     </li>
                 </ul>
                 
-                <span class="highlight w700">Gamificação:</span>
+                <span class="highlight w700">{{ t('start_dev.final_thoughts.thought2.title') }}</span>
                 <ul>
-                    <li>Implementamos incentivos que bonificam os alunos por interações.</li>
                     <li>
-                        Recompensas por completar cursos, avaliar aulas, responder atividades e
-                        interagir nos fóruns.
+                        {{ t('start_dev.final_thoughts.thought2.item1') }}
+                    </li>
+                    <li>
+                        {{ t('start_dev.final_thoughts.thought2.item2') }}
                     </li>
                 </ul>
                 
-                <span class="highlight w700">Satisfação do Cliente:</span>
+                <span class="highlight w700">{{ t('start_dev.final_thoughts.thought3.title') }}</span>
                 <ul>
                     <li>
-                        A plataforma ainda não foi lançada, mas o cliente ficou extremamente satisfeito
-                        com o resultado.
+                        {{ t('start_dev.final_thoughts.thought3.item') }}
                     </li>
                 </ul>
 
-                <span class="highlight w700">Realização Pessoal e Profissional:</span>
+                <span class="highlight w700">{{ t('start_dev.final_thoughts.thought4.title') }}</span>
                 <ul>
                     <li>
-                        A experiência de transformar ideias em produtos trouxe grande realização
-                        pessoal e profissional.
+                        {{ t('start_dev.final_thoughts.thought4.item') }}
                     </li>
                 </ul>
             </div>
