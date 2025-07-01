@@ -151,12 +151,12 @@
 
             <div class="wireframes-m">
                 <div
-                    v-for="index of Object.keys(wireframeMImages)"
+                    v-for="(image, index) in wireframeMImages"
                     :key="index"
                     class="wireframe-item"
                     @click="openModal('wireframesM', index)"
                 >
-                    <img :src="`/src/assets/img/start_dev_wireframe_mobile_${parseInt(index)+1}.png`" />
+                    <img :src="image.src" />
                     <div class="expand-overlay">
                         <font-awesome-icon :icon="['fas', 'expand']" />
                     </div>
@@ -165,12 +165,12 @@
 
             <div class="wireframes-d">
                 <div
-                    v-for="index of Object.keys(wireframeDImages)"
+                    v-for="(image, index) in wireframeDImages"
                     :key="index"
                     class="wireframe-item"
                     @click="openModal('wireframesD', index)"
                 >
-                    <img :src="`/src/assets/img/start_dev_wireframe_desktop_${parseInt(index)+1}.png`" />
+                    <img :src="image.src" />
                     <div class="expand-overlay">
                         <font-awesome-icon :icon="['fas', 'expand']" />
                     </div>
@@ -193,12 +193,12 @@
 
             <div class="wireframes-m">
                 <div
-                    v-for="index of Object.keys(wireframeHighMImages)"
+                    v-for="(image, index) in wireframeHighMImages"
                     :key="index"
                     class="wireframe-item"
                     @click="openModal('wireframesHM', index)"
                 >
-                    <img :src="`/src/assets/img/start_dev_high-fidelity_mobile_${parseInt(index)+1}.png`" />
+                    <img :src="image.src" />
                     <div class="expand-overlay">
                         <font-awesome-icon :icon="['fas', 'expand']" />
                     </div>
@@ -207,12 +207,12 @@
 
             <div class="wireframes-d">
                 <div
-                    v-for="index of Object.keys(wireframeHighDImages)"
+                    v-for="(image, index) in wireframeHighDImages"
                     :key="index"
                     class="wireframe-item"
                     @click="openModal('wireframesHD', index)"
                 >
-                    <img :src="`/src/assets/img/start_dev_high-fidelity_desktop_${parseInt(index)+1}.png`" />
+                    <img :src="image.src" />
                     <div class="expand-overlay">
                         <font-awesome-icon :icon="['fas', 'expand']" />
                     </div>

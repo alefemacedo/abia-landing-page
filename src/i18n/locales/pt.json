@@ -178,5 +178,172 @@
                 "item": "A experiência de transformar ideias em produtos trouxe grande realização pessoal e profissional."
             }
         }
+    },
+    "trade_plus": {
+        "presentation": {
+            "type": "UX Case",
+            "description": "Alavancamos as vendas nas cadeias de distribuição e impulsionamos o crescimento sustentável do varejo.",
+            "tool": "Ferramenta usada"
+        },
+        "contextualization": {
+            "title": "Entendendo a demanda",
+            "text1": "O principal desafio foi ",
+            "text2": "melhorar o fluxo de cadastro e trazer insigths de features que incentivassem o uso diário do aplicativo.",
+            "text3": " O Trade+ enfrentava um alto índice de desistências durante o processo de cadastro, além de várias reclamações sobre a dificuldade em realizar o cadastro e erros nas informações exibidas nas telas."
+        },
+        "problem_definition": {
+            "title": "Definindo o problema",
+            "po_meeting": "Reunião com o P.O:",
+            "po_items": {
+                "item1_1": "Solicitei uma ",
+                "item1_2": "explicação detalhada sobre o propósito dos dados",
+                "item1_3": " solicitados no fluxo de cadastro.",
+                "item2_1": "Percebi que o processo estava ficando cada vez mais complexo, com mais pessoas envolvidas a cada nova etapa, pois foi feito um ",
+                "item2_2": "telefone sem fio das informações e funcionalidades"
+            },
+            "ux_collaboration": "Colaboração com o time de UX:",
+            "ux_items": {
+                "item1_1": "Em parceria com meu líder, analisamos a situação para ",
+                "item1_2": "entender os pontos críticos.",
+                "item2_1": "Juntos, definimos quem seriam as partes interessadas que precisavam ser envolvidas no processo e conversei com essas pessoas para entender os dados ",
+                "item2_2": "essenciais para o fluxo."
+            }
+        },
+        "identifying_problem": {
+            "title": "Identificando o problema",
+            "text1": "Para entender melhor o que estava afetando a experiência dos usuários, solicitei ao time de desenvolvimento que levantasse ",
+            "text2": "dados internos",
+            "text3": " como:",
+            "data_items": {
+                "item1": "Qual tela apresentava o maior número de erros.",
+                "item2": "Onde os usuários clicavam com mais frequência.",
+                "item3": "Quanto tempo permaneciam em cada tela.",
+                "item4": "Quais eram os erros mais recorrentes."
+            },
+            "research_phase": "Durante esta fase de pesquisa, também procurei compreender:",
+            "research_items": {
+                "item1": "Qual era a reclamação mais frequente com o time de atendimento.",
+                "item2": "Quais eram as necessidades que o app não estava sanando.",
+                "item3": "Quais telas estavam faltando na documentação.",
+                "item4": "O que os usuários queriam no momento do cadastro.",
+                "item5": "Quem era o nosso usuário."
+            }
+        },
+        "persona": {
+            "title": "Persona",
+            "quote": "Busco crédito flexível que se adeque à minha loja, com taxas competitivas para um crescimento seguro",
+            "presentation": {
+                "title": "Apresentação",
+                "text": "Eduardo é um empreendedor dedicado e bem-sucedido que possui uma loja de conveniência há mais de oito anos. Ele tem uma abordagem estratégica para o varejo, buscando constantemente maneiras de melhorar seu negócio e oferecer uma experiência de compra positiva aos clientes. Eduardo é ativo em sua comunidade local, e sua loja é conhecida por fornecer produtos de qualidade e um atendimento personalizado."
+            },
+            "interests": {
+                "title": "Interesses",
+                "credit": "Crédito e Finanças Empresariais: Ele está interessado em opções que ofereçam flexibilidade no pagamento e prazos mais longos, permitindo uma gestão financeira mais eficiente.",
+                "technology": "Tecnologia e Inovação: compreende a importância da tecnologia no varejo e está sempre em busca de soluções inovadoras que possam melhorar a eficiência de sua loja, desde sistemas de ponto de venda até métodos de pagamento modernos."
+            },
+            "objectives": {
+                "title": "Objetivos",
+                "credit_solutions": "Encontrar Soluções de Crédito Personalizadas: programas de crédito flexíveis, com taxas competitivas e opções de pagamento personalizadas para atender às necessidades específicas em sua loja.",
+                "increase_sales": "Aumentar as vendas em sua loja.",
+                "integrated_solutions": "Soluções integradas à tecnologia, proporcionando uma experiência de pagamento suave e eficiente para os clientes de Eduardo."
+            },
+            "insights1": "A partir dessa coleta de dados, criamos a matriz CSD",
+            "insights2": ", que nos ajudou a organizar as informações, hipóteses e incertezas em relação ao processo de cadastro e funcionalidades do app"
+        },
+        "csd_matrix": {
+            "title": "Matriz CSD (Certezas, Suposições e Dúvidas)",
+            "text1": "Com base nas informações coletadas durante essas conversas, criamos uma matriz CSD para ",
+            "text2": "organizar o que já sabíamos, o que acreditávamos ser verdade e as questões que ainda precisávamos investigar.",
+            "text3": " Isso ajudou a alinhar expectativas e garantir que nossas próximas decisões fossem baseadas em dados e não apenas em suposições.",
+            "images": {
+                "matrix_ready": "Matriz depois de pronta",
+                "meeting": "Reunião com as pessoas que definimos na reunião. Aqui temos pessoas de Produto, Desenvolvimento, Marketing e suporte ao cliente.",
+                "participants": "Participantes de forma Online"
+            },
+            "problems_identified": "Problemas Identificados:",
+            "problems": {
+                "item1_1": "O design original, desenvolvido pelos desenvolvedores, ",
+                "item1_2": "não passou por um processo adequado de UX/UI.",
+                "item2": "O cadastro era longo e complexo, resultando em altas taxas de desistência.",
+                "item3_1": "Informações importantes foram ignoradas ou mal posicionadas",
+                "item3_2": ", o que deixou ",
+                "item3_3": "o fluxo de cadastro confuso e frustrante para os usuários.",
+                "item4": "Poucas funcionalidades interessantes no APP.",
+                "item5_1": "Devs ",
+                "item5_2": "não sabiam quem era o usuário"
+            }
+        },
+        "data_analysis": {
+            "title": "Análise dos Dados",
+            "text": "Com os dados da matriz CSD, os insights dos dados internos e reclamações dos usuários.",
+            "main_points": "Identifiquei os principais pontos para o projeto:",
+            "points": {
+                "excess_info1": "Excesso de informações solicitadas:",
+                "excess_info2": " Muitos usuários comentaram sobre a quantidade exagerada de dados exigidos no cadastro. Um deles até brincou que era ",
+                "excess_info3": "``mais fácil conseguir um green card do que se cadastrar no app''",
+                "long_registration1": "Cadastro extenso:",
+                "long_registration2": " O processo contava com mais de 30 telas, tornando a experiência demorada e cansativa para os usuários",
+                "different_interest1": "Interesse inicial diferente:",
+                "different_interest2": " A maioria dos usuários queria primeiro explorar o aplicativo e entender como ele funcionava, em vez de focar no processo de aprovação de crédito logo de cara.",
+                "few_features1": "Poucas funcionalidades:",
+                "few_features2": " O aplicativo não oferecia atrativos que incentivassem o uso contínuo, o que reduzia a frequência de acesso.",
+                "lorem_ipsum1": "Textos vazios (Lorem Ipsum):",
+                "lorem_ipsum2": " Algumas telas ainda continham textos fictícios, o que passava uma impressão de falta de profissionalismo e fazia o app parecer falso"
+            },
+            "objectives": {
+                "title": "Principais Objetivos",
+                "optimize": "Otimizar o cadastro",
+                "document": "Documentar telas e fluxo do usuário",
+                "insights": "Trazer insigths de novas funcionalidades"
+            }
+        },
+        "wireflow": {
+            "title": "Wireflow",
+            "text": "Realizei todo o fluxo de cadastro como um usuário, identificando os principais erros, problemas de acessibilidade e documentando cada etapa da jornada. Esse levantamento detalhado permitiu mapear as áreas que causavam confusão e onde melhorias eram necessárias para tornar o processo mais intuitivo e eficiente. Além de mapear tanto os erros no design quando os textos que estavam em lorem ipsum."
+        },
+        "insights_improvements": {
+            "title": "Principais Insights e Melhorias",
+            "improvements": {
+                "two_steps1": "Divisão do Cadastro em Duas Etapas:",
+                "two_steps2": " Criamos um processo inicial com dados básicos, permitindo que o usuário tenha acesso ao app rapidamente. A segunda etapa é voltada para quem realmente deseja ativar o produto e solicitar uma linha de crédito",
+                "optimize_fields1": "Otimização de Campos:",
+                "optimize_fields2": " Reduzimos os campos do cadastro, mantendo apenas as informações realmente relevantes e úteis para o processo",
+                "accessible_texts1": "Textos e Ícones Mais Acessíveis:",
+                "accessible_texts2": " Implementamos uma linguagem mais simples e direta, além de ícones intuitivos para facilitar o reconhecimento e navegação dos usuários",
+                "validation_flow1": "Ajuste no Fluxo de Validação:",
+                "validation_flow2": " Corrigimos erros no fluxo de cadastro, como a validação do número de contato logo no início, evitando que o usuário só descobrisse o erro no final do processo",
+                "mapping_documentation1": "Mapeamento e Documentação do Fluxo:",
+                "mapping_documentation2": " Todo o fluxo de cadastro foi mapeado e documentado para evitar retrabalho no futuro e garantir maior eficiência",
+                "new_features1": "Novas Features no App:",
+                "new_features2": " Adicionamos uma seção para que o usuário acompanhe o limite utilizado e disponível, além de uma aba para acessar boletos diretamente no app (antes era possível apenas via desktop). Também foram incluídas configurações de dados básicos e um FAQ para suporte rápido"
+            }
+        },
+        "wireframes_idea": {
+            "title": "Wireframes e Validação das ideias",
+            "text": "Com base nos insights coletados e na matriz CSD, desenvolvi novas funcionalidades para melhorar a experiência do usuário e aumentar o uso contínuo do app. Criei wireframes em alta fidelidade e navegáveis, permitindo que as partes interessadas visualizassem e interagissem com as soluções antes da implementação."
+        },
+        "final_thoughts": {
+            "title": "Reflexões finais",
+            "challenges": "Desafios e Enriquecimento:",
+            "challenges_items": {
+                "item1": "Tive a oportunidade de melhorar minha organização de processos e a comunicação com a equipe.",
+                "item2": "Ver como os meus colegas de equipe entenderam o que era o UX e como ele agrega a empresa em um geral."
+            },
+            "design_routines": "Implementação de Rotinas de Design:",
+            "routines_items": {
+                "item1": "Consegui implantar rotinas de design com minha squad, o que foi um avanço importante.",
+                "item2": "Apresente mostrei como o ux bem aplicado impacta diretamente nos resultados, o que foi muito gratificante."
+            },
+            "missed_opportunities": "Oportunidades Não Aproveitadas:",
+            "opportunities_items": {
+                "item1": "Senti falta de realizar entrevistas com usuários e testes de usabilidade após as decisões finais.",
+                "item2": "Ter acompanhado de perto o impacto dessas soluções nos usuários teria sido ideal para coletar feedbacks mais detalhados. Apesar disso, acredito que focamos nos pontos mais críticos e resolvemos as principais dores da empresa."
+            },
+            "predictions_results": "Previsões e resultados:",
+            "results_items": {
+                "item1": "As sugestões baseadas na pesquisa foram entregues em alta fidelidade e de forma navegável.",
+                "item2": "Acredito que as soluções implementadas irão melhorar a experiência do usuário e gerar resultados positivos para o negócio a longo prazo."
+            }
+        }
     }
 }

@@ -178,5 +178,172 @@
                 "item": "The experience of transforming ideas into products brought great personal and professional fulfillment."
             }
         }
+    },
+    "trade_plus": {
+        "presentation": {
+            "type": "UX Case",
+            "description": "We boost sales in distribution chains and drive sustainable retail growth.",
+            "tool": "Tool used"
+        },
+        "contextualization": {
+            "title": "Understanding the demand",
+            "text1": "The main challenge was ",
+            "text2": "to improve the registration flow and bring insights for features that would encourage daily app usage.",
+            "text3": " Trade+ faced a high dropout rate during the registration process, in addition to several complaints about the difficulty in completing registration and errors in the information displayed on screens."
+        },
+        "problem_definition": {
+            "title": "Defining the problem",
+            "po_meeting": "Meeting with the P.O:",
+            "po_items": {
+                "item1_1": "I requested a I requested a ",
+                "item1_2": "detailed explanation about the purpose of the data",
+                "item1_3": " requested in the registration flow.",
+                "item2_1": "I noticed that the process was becoming increasingly complex, with more people involved at each new stage, as there was a ",
+                "item2_2": "game of telephone with information and functionalities"
+            },
+            "ux_collaboration": "Collaboration with the UX team:",
+            "ux_items": {
+                "item1_1": "In partnership with my leader, we analyzed the situation to ",
+                "item1_2": "understand the critical points.",
+                "item2_1": "Together, we defined who the stakeholders would be that needed to be involved in the process and I talked to these people to understand the",
+                "item2_2": "essential data for the flow."
+            }
+        },
+        "identifying_problem": {
+            "title": "Identifying the problem",
+            "text1": "To better understand what was affecting the user experience, I asked the development team to gather ",
+            "text2": "internal data",
+            "text3": " such as:",
+            "data_items": {
+                "item1": "Which screen had the highest number of errors.",
+                "item2": "Where users clicked most frequently.",
+                "item3": "How long they stayed on each screen.",
+                "item4": "What were the most recurring errors."
+            },
+            "research_phase": "During this research phase, I also sought to understand:",
+            "research_items": {
+                "item1": "What was the most frequent complaint with the support team.",
+                "item2": "What were the needs that the app was not meeting.",
+                "item3": "Which screens were missing from the documentation.",
+                "item4": "What users wanted at the time of registration.",
+                "item5": "Who was our user."
+            }
+        },
+        "persona": {
+            "title": "Persona",
+            "quote": "I seek flexible credit that fits my store, with competitive rates for safe growth",
+            "presentation": {
+                "title": "Presentation",
+                "text": "Eduardo is a dedicated and successful entrepreneur who has owned a convenience store for over eight years. He has a strategic approach to retail, constantly seeking ways to improve his business and provide a positive shopping experience for customers. Eduardo is active in his local community, and his store is known for providing quality products and personalized service."
+            },
+            "interests": {
+                "title": "Interests",
+                "credit": "Business Credit and Finance: He is interested in options that offer payment flexibility and longer terms, allowing for more efficient financial management.",
+                "technology": "Technology and Innovation: he understands the importance of technology in retail and is always looking for innovative solutions that can improve the efficiency of his store, from point-of-sale systems to modern payment methods."
+            },
+            "objectives": {
+                "title": "Objectives",
+                "credit_solutions": "Find Personalized Credit Solutions: flexible credit programs, with competitive rates and personalized payment options to meet the specific needs of his store.",
+                "increase_sales": "Increase sales in his store.",
+                "integrated_solutions": "Technology-integrated solutions, providing a smooth and efficient payment experience for Eduardo's customers."
+            },
+            "insights1": "From this data collection, we created the CSD matrix",
+            "insights2": ", which helped us organize the information, hypotheses and uncertainties regarding the registration process and app functionalities"
+        },
+        "csd_matrix": {
+            "title": "CSD Matrix (Certainties, Assumptions and Doubts)",
+            "text1": "Based on the information collected during these conversations, we created a CSD matrix to ",
+            "text2": "organize what we already knew, what we believed to be true, and the questions we still needed to investigate.",
+            "text3": " This helped align expectations and ensure that our next decisions were based on data and not just assumptions.",
+            "images": {
+                "matrix_ready": "Matrix after completion",
+                "meeting": "Meeting with the people we defined in the meeting. Here we have people from Product, Development, Marketing and customer support.",
+                "participants": "Participants Online"
+            },
+            "problems_identified": "Identified Problems:",
+            "problems": {
+                "item1_1": "The original design, developed by developers, ",
+                "item1_2": "did not go through an adequate UX/UI process.",
+                "item2": "The registration was long and complex, resulting in high dropout rates.",
+                "item3_1": "Important information was ignored or poorly positioned",
+                "item3_2": ", which made ",
+                "item3_3": "the registration flow confusing and frustrating for users.",
+                "item4": "Few interesting features in the APP.",
+                "item5_1": "Developers ",
+                "item5_2": "didn't know who the user was"
+            }
+        },
+        "data_analysis": {
+            "title": "Data Analysis",
+            "text": "With the CSD matrix data, internal data insights and user complaints.",
+            "main_points": "I identified the main points for the project:",
+            "points": {
+                "excess_info1": "Excess of requested information: ",
+                "excess_info2": "Many users commented on the excessive amount of data required in registration. One of them even joked that it was ",
+                "excess_info3": "``easier to get a green card than to register in the app''",
+                "long_registration1": "Extensive registration:",
+                "long_registration2": " The process had more than 30 screens, making the experience time-consuming and tiring for users",
+                "different_interest1": "Different initial interest:",
+                "different_interest2": " Most users wanted to first explore the app and understand how it worked, rather than focusing on the credit approval process right away.",
+                "few_features1": "Few features:",
+                "few_features2": " The app didn't offer attractions that would encourage continued use, which reduced access frequency",
+                "lorem_ipsum1": "Empty texts (Lorem Ipsum):",
+                "lorem_ipsum2": " Some screens still contained fictional texts, which gave an impression of lack of professionalism and made the app seem fake."
+            },
+            "objectives": {
+                "title": "Main Objectives",
+                "optimize": "Optimize registration",
+                "document": "Document screens and user flow",
+                "insights": "Bring insights for new features"
+            }
+        },
+        "wireflow": {
+            "title": "Wireflow",
+            "text": "I performed the entire registration flow as a user, identifying the main errors, accessibility issues and documenting each step of the journey. This detailed survey allowed us to map the areas that caused confusion and where improvements were needed to make the process more intuitive and efficient. In addition to mapping both design errors and texts that were in lorem ipsum."
+        },
+        "insights_improvements": {
+            "title": "Main Insights and Improvements",
+            "improvements": {
+                "two_steps1": "Two-Step Registration Division:",
+                "two_steps2": " We created an initial process with basic data, allowing the user to quickly access the app. The second stage is aimed at those who really want to activate the product and request a credit line",
+                "optimize_fields1": "Field Optimization:",
+                "optimize_fields2": " We reduced the registration fields, keeping only the information that was really relevant and useful for the process",
+                "accessible_texts1": "More Accessible Texts and Icons:",
+                "accessible_texts2": " We implemented simpler and more direct language, as well as intuitive icons to facilitate user recognition and navigation",
+                "validation_flow1": "Validation Flow Adjustment:",
+                "validation_flow2": " We corrected errors in the registration flow, such as validating the contact number at the beginning, preventing the user from only discovering the error at the end of the process",
+                "mapping_documentation1": "Flow Mapping and Documentation:",
+                "mapping_documentation2": " The entire registration flow was mapped and documented to avoid rework in the future and ensure greater efficiency",
+                "new_features1": "New App Features:",
+                "new_features2": " We added a section for the user to track the used and available limit, as well as a tab to access bills directly in the app (previously only possible via desktop). Basic data settings and an FAQ for quick support were also included"
+            }
+        },
+        "wireframes_idea": {
+            "title": "Wireframes and Idea Validation",
+            "text": "Based on the collected insights and the CSD matrix, I developed new functionalities to improve the user experience and increase continuous app usage. I created high-fidelity and navigable wireframes, allowing stakeholders to view and interact with the solutions before implementation."
+        },
+        "final_thoughts": {
+            "title": "Final thoughts",
+            "challenges": "Challenges and Enrichment:",
+            "challenges_items": {
+                "item1": "I had the opportunity to improve my process organization and communication with the team.",
+                "item2": "Seeing how my teammates understood what UX was and how it adds value to the company in general."
+            },
+            "design_routines": "Implementation of Design Routines:",
+            "routines_items": {
+                "item1": "I managed to implement design routines with my squad, which was an important advancement.",
+                "item2": "I presented and showed how well-applied UX directly impacts results, which was very rewarding."
+            },
+            "missed_opportunities": "Missed Opportunities:",
+            "opportunities_items": {
+                "item1": "I missed conducting user interviews and usability testing after the final decisions.",
+                "item2": "Having closely monitored the impact of these solutions on users would have been ideal to collect more detailed feedback. Despite this, I believe we focused on the most critical points and solved the company's main pain points."
+            },
+            "predictions_results": "Predictions and results:",
+            "results_items": {
+                "item1": "The research-based suggestions were delivered in high fidelity and in a navigable format.",
+                "item2": "I believe that the implemented solutions will improve the user experience and generate positive results for the business in the long term."
+            }
+        }
     }
 }

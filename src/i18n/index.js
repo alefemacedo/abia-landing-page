@@ -1,5 +1,6 @@
 import { createI18n } from 'vue-i18n'
 import pt from './locales/pt.json?raw'
+import en from './locales/en.json?raw'
 
 export default createI18n({
     locale: import.meta.env.VITE_DEFAULT_LOCALE,
@@ -8,6 +9,7 @@ export default createI18n({
     globalInjection: true,
     messages: {
         pt: JSON.parse(pt),
+        en: JSON.parse(en),
     },
     escapeParameterHtml: false,
     allowComposition: true,

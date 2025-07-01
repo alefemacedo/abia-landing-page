@@ -3,18 +3,17 @@
         <div class="presentation">
             <div class="case">
                 <img src="@/assets/svg/icon_star.svg" />
-                <span class="type">UX Case</span>
+                <span class="type">{{ $t('trade_plus.presentation.type') }}</span>
             </div>
 
             <img src="@/assets/svg/trade_plus_logo.svg" class="logo" />
 
             <span class="description">
-                Alavancamos as vendas nas cadeias de distribuição e impulsionamos o crescimento
-                sustentável do varejo.
+                {{ $t('trade_plus.presentation.description') }}
             </span>
 
             <span class="tools">
-                Ferramenta usada  
+                {{ $t('trade_plus.presentation.tool') }}  
                 <img src="@/assets/svg/figma_logo.svg" />
             </span>
 
@@ -26,49 +25,45 @@
         </div>
 
         <div class="contextualization section">
-            <span class="title w700">Entendendo a demanda</span>
+            <span class="title w700">{{ $t('trade_plus.contextualization.title') }}</span>
             <br />
 
             <div class="text">
-                O principal desafio foi <span class="highlight">melhorar o fluxo de cadastro e
-                trazer insigths de features que incentivassem o uso diário do aplicativo.</span>
-                O Trade+ enfrentava um alto índice de desistências durante o processo de cadastro,
-                além de várias reclamações sobre a dificuldade em realizar o cadastro e erros nas
-                informações exibidas nas telas.
+                {{ $t('trade_plus.contextualization.text1') }}
+                <span class="highlight">{{ $t('trade_plus.contextualization.text2') }}</span>
+                {{ $t('trade_plus.contextualization.text3') }}
             </div>
 
             <img src="@/assets/img/character_1.png" class="character-1" />
         </div>
 
         <div class="problem-definition section">
-            <span class="title w700">Definindo o problema</span>
+            <span class="title w700">{{ $t('trade_plus.problem_definition.title') }}</span>
             <br />
 
             <div class="text">
-                <span class="highlight w700">Reunião com o P.O:</span>
+                <span class="highlight w700">{{ $t('trade_plus.problem_definition.po_meeting') }}</span>
                 <ul>
                     <li>
-                        Solicitei uma <span class="highlight">explicação detalhada sobre o
-                        propósito dos dados</span> solicitados no fluxo de cadastro.
+                        {{ $t('trade_plus.problem_definition.po_items.item1_1') }}
+                        <span class="highlight">{{ $t('trade_plus.problem_definition.po_items.item1_2') }}</span>
+                        {{ $t('trade_plus.problem_definition.po_items.item1_3') }}
                     </li>
                     <li>
-                        Percebi que o processo estava ficando cada vez mais complexo, com
-                        mais pessoas envolvidas a cada nova etapa, pois foi feito um
-                        <span class="hightlight">telefone sem fio das informações e
-                        funcionalidades</span>
+                        {{ $t('trade_plus.problem_definition.po_items.item2_1') }}
+                        <span class="highlight">{{ $t('trade_plus.problem_definition.po_items.item2_2') }}</span>.
                     </li>
                 </ul>
 
-                <span class="highlight w700">Colaboração com o time de UX:</span>
+                <span class="highlight w700">{{ $t('trade_plus.problem_definition.ux_collaboration') }}</span>
                 <ul>
                     <li>
-                        Em parceria com meu líder, analisamos a situação para <span class="highlight">
-                        entender os pontos críticos</span>.
+                        {{ $t('trade_plus.problem_definition.ux_items.item1_1') }}
+                        <span class="highlight">{{ $t('trade_plus.problem_definition.ux_items.item1_2') }}</span>
                     </li>
                     <li>
-                        Juntos, definimos quem seriam as partes interessadas que precisavam ser envolvidas
-                        no processo e conversei com essas pessoas para entender os dados
-                        <span class="hightlight">essenciais para o fluxo.</span>
+                        {{ $t('trade_plus.problem_definition.ux_items.item2_1') }}
+                        <span class="highlight">{{ $t('trade_plus.problem_definition.ux_items.item2_2') }}</span>
                     </li>
                 </ul>
             </div>
@@ -77,18 +72,19 @@
         </div>
 
         <div class="identifying-problem section">
-            <span class="title w700">Identificando o problema</span>
+            <span class="title w700">{{ $t('trade_plus.identifying_problem.title') }}</span>
             <br />
 
             <div class="text">
-                Para entender melhor o que estava afetando a experiência dos usuários, solicitei ao time
-                de desenvolvimento que levantasse <span class="highlight w700">dados internos</span> como:
+                {{ $t('trade_plus.identifying_problem.text1') }}
+                <span class="highlight">{{ $t('trade_plus.identifying_problem.text2') }}</span>
+                {{ $t('trade_plus.identifying_problem.text3') }}
 
                 <ul>
-                    <li>Qual tela apresentava o maior número de erros.</li>
-                    <li>Onde os usuários clicavam com mais frequência.</li>
-                    <li>Quanto tempo permaneciam em cada tela.</li>
-                    <li>Quais eram os erros mais recorrentes.</li>
+                    <li>{{ $t('trade_plus.identifying_problem.data_items.item1') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.data_items.item2') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.data_items.item3') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.data_items.item4') }}</li>
                 </ul>
 
                 <img src="@/assets/svg/stars_plus_2.svg" class="stars-plus" />
@@ -97,75 +93,61 @@
             <img src="@/assets/img/trade_plus_reunions.png" class="trade-plus-reunions" />
 
             <div class="text">
-                <span class="highlight w700">Durante esta fase de pesquisa, também procurei compreender:</span>
+                <span class="highlight w700">{{ $t('trade_plus.identifying_problem.research_phase') }}</span>
                 <ul>
-                    <li>Qual era a reclamação mais frequente com o time de atendimento.</li>
-                    <li>Quais eram as necessidades que o app não estava sanando.</li>
-                    <li>Quais telas estavam faltando na documentação.</li>
-                    <li>O que os usuários queriam no momento do cadastro.</li>
-                    <li>Quem era o nosso usuário.</li>
+                    <li>{{ $t('trade_plus.identifying_problem.research_items.item1') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.research_items.item2') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.research_items.item3') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.research_items.item4') }}</li>
+                    <li>{{ $t('trade_plus.identifying_problem.research_items.item5') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="persona section">
-            <span class="title w700">Persona</span>
+            <span class="title w700">{{ $t('trade_plus.persona.title') }}</span>
             <br />
 
             <div class="persona-content">
                 <div class="persona-profile">
                     <img src="@/assets/img/trade_plus_persona.png" style="border-radius: 53px;" />
                     <span class="quote w400">
-                        "Busco crédito flexível que se adeque à minha loja, com taxas competitivas para um
-                        crescimento seguro"
+                        "{{ $t('trade_plus.persona.quote') }}"
                     </span>
                 </div>
 
                 <div class="text">
                     <div class="sub-text" style="margin-bottom: 17px;">
                         <span class="title3 w700" style="margin-bottom: 22px; display: inline-block;">
-                            Apresentação
+                            {{ $t('trade_plus.persona.presentation.title') }}
                         </span>
                         <br />
-                        Eduardo é um empreendedor dedicado e bem-sucedido que possui uma loja de
-                        conveniência há mais de oito anos. Ele tem uma abordagem estratégica para
-                        o varejo, buscando constantemente maneiras de melhorar seu negócio e
-                        oferecer uma experiência de compra positiva aos clientes. Eduardo é ativo
-                        em sua comunidade local, e sua loja é conhecida por fornecer produtos de
-                        qualidade e um atendimento personalizado.
+                        {{ $t('trade_plus.persona.presentation.text') }}
                     </div>
 
                     <div class="sub-text">
-                        <span class="title3 w700">Interesses</span>
+                        <span class="title3 w700">{{ $t('trade_plus.persona.interests.title') }}</span>
 
                         <ol style="list-style-type: lower-latin;">
                             <li>
-                                Crédito e Finanças Empresariais:  Ele está interessado em opções
-                                que ofereçam flexibilidade no pagamento e prazos mais longos,
-                                permitindo uma gestão financeira mais eficiente.
+                                {{ $t('trade_plus.persona.interests.credit') }}
                             </li>
                             <li>
-                                Tecnologia e Inovação: compreende a importância da tecnologia no
-                                varejo e está sempre em busca de soluções inovadoras que possam
-                                melhorar a eficiência de sua loja, desde sistemas de ponto de
-                                venda até métodos de pagamento modernos.
+                                {{ $t('trade_plus.persona.interests.technology') }}
                             </li>
                         </ol>
                     </div>
 
                     <div class="sub-text">
-                        <span class="title3 w700">Objetivos</span>
+                        <span class="title3 w700">{{ $t('trade_plus.persona.objectives.title') }}</span>
 
                         <ul>
                             <li>
-                                Encontrar Soluções de Crédito Personalizadas:  programas de crédito
-                                flexíveis, com taxas competitivas e opções de pagamento personalizadas
-                                para atender às necessidades específicas  em sua loja.
+                                {{ $t('trade_plus.persona.objectives.credit_solutions') }}
                             </li>
-                            <li>Aumentar as vendas em sua loja.</li>
+                            <li>{{ $t('trade_plus.persona.objectives.increase_sales') }}</li>
                             <li>
-                                Soluções integradas à tecnologia, proporcionando uma experiência de
-                                pagamento suave e eficiente para os clientes de Eduardo.
+                                {{ $t('trade_plus.persona.objectives.integrated_solutions') }}
                             </li>
                         </ul>
                     </div>
@@ -177,105 +159,100 @@
             <div class="insights">
                 <img src="@/assets/svg/icon_star.svg" />
                 <div class="text">
-                    <span class="highlight">A partir dessa coleta de dados, criamos a matriz CSD</span>,
-                    que nos ajudou a organizar as informações, hipóteses e incertezas em relação ao
-                    processo de cadastro e funcionalidades do app
+                    <span class="highlight">{{ $t('trade_plus.persona.insights1') }}</span>
+                    {{ $t('trade_plus.persona.insights2') }}
                 </div>
             </div>
         </div>
 
         <div class="csd-matrix section">
-            <span class="title w700">Matriz CSD (Certezas, Suposições e Dúvidas)</span>
+            <span class="title w700">{{ $t('trade_plus.csd_matrix.title') }}</span>
             <br />
 
             <div class="text">
-                Com base nas informações coletadas durante essas conversas, criamos uma matriz CSD
-                para <span class="highlight">organizar o que já sabíamos, o que acreditávamos ser
-                verdade e as questões que ainda precisávamos investigar.</span> Isso ajudou a
-                alinhar expectativas e garantir que nossas próximas decisões fossem baseadas
-                em dados e não apenas em suposições.
+                {{ $t('trade_plus.csd_matrix.text1') }}
+                <span class="highlight">{{ $t('trade_plus.csd_matrix.text2') }}</span>
+                {{ $t('trade_plus.csd_matrix.text3') }}
             </div>
             <br />
 
             <div class="csd-images">
                 <figure>
                     <img src="@/assets/img/trade_plus_csd_1.png" />
-                    <figcaption>Matriz depois de pronta</figcaption>
+                    <figcaption>{{ $t('trade_plus.csd_matrix.images.matrix_ready') }}</figcaption>
                 </figure>
 
                 <figure>
                     <img src="@/assets/img/trade_plus_csd_2.png" />
                     <figcaption style="width: 270px;">
-                        Reunião com as pessoas que definimos na reunião. Aqui temos pessoas de Produto,
-                        Desenvolvimento, Marketing e suporte ao cliente.
+                        {{ $t('trade_plus.csd_matrix.images.meeting') }}
                     </figcaption>
                 </figure>
 
                 <figure>
                     <img src="@/assets/img/trade_plus_csd_3.png" />
-                    <figcaption>Participantes de forma Online</figcaption>
+                    <figcaption>{{ $t('trade_plus.csd_matrix.images.participants') }}</figcaption>
                 </figure>
             </div>
 
             <div class="text">
-                <span class="highlight w700">Problemas Identificados:</span>
+                <span class="highlight w700">{{ $t('trade_plus.csd_matrix.problems_identified') }}</span>
                 <ul>
                     <li>
-                        O design original, desenvolvido pelos desenvolvedores, <span class="highlight">
-                        não passou por um processo adequado de UX/UI</span>.
+                        {{ $t('trade_plus.csd_matrix.problems.item1_1') }}
+                        <span>{{ $t('trade_plus.csd_matrix.problems.item1_2') }}</span>.
                     </li>
-                    <li>O cadastro era longo e complexo, resultando em altas taxas de desistência.</li>
+                    <li>{{ $t('trade_plus.csd_matrix.problems.item2') }}</li>
                     <li>
-                        <span class="highlight">Informações importantes foram ignoradas ou mal posicionadas
-                        </span>, o que deixou <span class="highlight">o fluxo de cadastro confuso e frustrante
-                        para os usuários</span>.
+                        <span class="highlight">{{ $t('trade_plus.csd_matrix.problems.item3_1') }}</span>
+                        {{ $t('trade_plus.csd_matrix.problems.item3_2') }}
+                        <span class="highlight">{{ $t('trade_plus.csd_matrix.problems.item3_3') }}</span>
                     </li>
-                    <li>Poucas funcionalidades interessantes no APP.</li>
-                    <li>Devs <span class="highlight">não sabiam quem era o usuário</span>.</li>
+                    <li>{{ $t('trade_plus.csd_matrix.problems.item4') }}</li>
+                    <li>
+                        {{ $t('trade_plus.csd_matrix.problems.item5_1') }}
+                        <span class="highlight">{{ $t('trade_plus.csd_matrix.problems.item5_2') }}</span>.
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="data-analysis section">
-            <span class="title w700">Análise dos Dados</span>
+            <span class="title w700">{{ $t('trade_plus.data_analysis.title') }}</span>
             <br />
 
             <div class="text">
-                Com os dados da matriz CSD, os insights dos dados internos e reclamações dos usuários.
+                {{ $t('trade_plus.data_analysis.text') }}
                 <br />
                 <br />
 
-                <span class="highlight w700">Identifiquei os principais pontos para o projeto:</span>
+                <span class="highlight w700">{{ $t('trade_plus.data_analysis.main_points') }}</span>
                 <ol>
                     <li>
-                        <span class="highlight">Excesso de informações solicitadas:</span> Muitos usuários
-                        comentaram sobre a quantidade exagerada de dados exigidos no cadastro. Um deles até
-                        brincou que era <span class="highlight">"mais fácil conseguir um green card do que
-                        se cadastrar no app"</span>.
+                        <span class="highlight">{{ $t('trade_plus.data_analysis.points.excess_info1') }}</span>
+                        {{ $t('trade_plus.data_analysis.points.excess_info2') }}
+                        <span class="highlight">{{ $t('trade_plus.data_analysis.points.excess_info3') }}</span>.
                     </li>
                     <li>
-                        <span class="highlight">Cadastro extenso:</span> O processo contava com mais de 30
-                        telas, tornando a experiência demorada e cansativa para os usuários.
+                        <span class="highlight">{{ $t('trade_plus.data_analysis.points.long_registration1') }}</span>
+                        {{ $t('trade_plus.data_analysis.points.long_registration2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Interesse inicial diferente:</span> A maioria dos usuários
-                        queria primeiro explorar o aplicativo e entender como ele funcionava, em vez de focar
-                        no processo de aprovação de crédito logo de cara.
+                        <span class="highlight">{{ $t('trade_plus.data_analysis.points.different_interest1') }}</span>
+                        {{ $t('trade_plus.data_analysis.points.different_interest2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Poucas funcionalidades:</span> O aplicativo não oferecia
-                        atrativos que incentivassem o uso contínuo, o que reduzia a frequência de acesso.
+                        <span class="highlight">{{ $t('trade_plus.data_analysis.points.few_features1') }}</span>
+                        {{ $t('trade_plus.data_analysis.points.few_features2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Textos vazios (Lorem Ipsum):</span> Algumas telas ainda
-                        continham textos fictícios, o que passava uma impressão de falta de profissionalismo
-                        e fazia o app parecer falso.
+                        {{ $t('trade_plus.data_analysis.points.lorem_ipsum') }}
                     </li>
                 </ol>
             </div>
 
             <div class="objectives">
-                <span class="title w700">Principais Objetivos</span>
+                <span class="title w700">{{ $t('trade_plus.data_analysis.objectives.title') }}</span>
                 <div class="item-list">
                     <div
                         v-for="(objective, index) of objectives"
@@ -290,15 +267,11 @@
         </div>
 
         <div class="wireflow section">
-            <span class="title w700">Wireflow</span>
+            <span class="title w700">{{ $t('trade_plus.wireflow.title') }}</span>
             <br />
 
             <div class="text">
-                Realizei todo o fluxo de cadastro como um usuário, identificando os principais erros, problemas
-                de acessibilidade  e documentando cada etapa da jornada. Esse levantamento detalhado permitiu
-                mapear as áreas que causavam confusão e onde melhorias eram necessárias para tornar o processo
-                mais intuitivo e eficiente. Além de mapear tanto os erros no design quando os textos que estavam
-                em lorem ipsum.
+                {{ $t('trade_plus.wireflow.text') }}
             </div>
             <br />
 
@@ -314,39 +287,34 @@
         </div>
 
         <div class="insights-improvements section">
-            <span class="title w700">Principais Insights e Melhorias</span>
+            <span class="title w700">{{ $t('trade_plus.insights_improvements.title') }}</span>
             <br />
 
             <div class="text">
                 <ol>
                     <li>
-                        <span class="highlight">Divisão do Cadastro em Duas Etapas:</span> Criamos um processo inicial
-                        com dados básicos, permitindo que o usuário tenha acesso ao app rapidamente. A segunda etapa
-                        é voltada para quem realmente deseja ativar o produto e solicitar uma linha de crédito.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.two_steps1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.two_steps1') }}.
                     </li>
                     <li>
-                        <span class="highlight">Otimização de Campos:</span> Reduzimos os campos do cadastro, mantendo
-                        apenas as informações realmente relevantes e úteis para o processo.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.optimize_fields1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.optimize_fields2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Textos e Ícones Mais Acessíveis:</span> Implementamos uma linguagem
-                        mais simples e direta, além de ícones intuitivos para facilitar o reconhecimento e navegação
-                        dos usuários.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.accessible_texts1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.accessible_texts2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Ajuste no Fluxo de Validação:</span> Corrigimos erros no fluxo de
-                        cadastro, como a validação do número de contato logo no início, evitando que o usuário só
-                        descobrisse o erro no final do processo.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.validation_flow1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.validation_flow2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Mapeamento e Documentação do Fluxo:</span> Todo o fluxo de cadastro
-                        foi mapeado e documentado para evitar retrabalho no futuro e garantir maior eficiência.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.mapping_documentation1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.mapping_documentation2') }}.
                     </li>
                     <li>
-                        <span class="highlight">Novas Features no App:</span> Adicionamos uma seção para que o usuário
-                        acompanhe o limite utilizado e disponível, além de uma aba para acessar boletos diretamente no
-                        app (antes era possível apenas via desktop). Também foram incluídas configurações de dados
-                        básicos e um FAQ para suporte rápido.
+                        <span class="highlight">{{ $t('trade_plus.insights_improvements.improvements.new_features1') }}</span>
+                        {{ $t('trade_plus.insights_improvements.improvements.new_features2') }}.
                     </li>
                 </ol>
             </div>
@@ -354,13 +322,11 @@
         </div>
 
         <div class="wireframes-idea section">
-            <span class="title w700">Wireframes e Validação das ideias</span>
+            <span class="title w700">{{ $t('trade_plus.wireframes_idea.title') }}</span>
             <br />
 
             <div class="text">
-                Com base nos insights coletados e na matriz CSD, desenvolvi novas funcionalidades para melhorar a experiência
-                do usuário e aumentar o uso contínuo do app. Criei wireframes em alta fidelidade e navegáveis, permitindo que
-                as partes interessadas visualizassem e interagissem com as soluções antes da implementação."
+                {{ $t('trade_plus.wireframes_idea.text') }}
             </div>
 
             <div class="scrollimage">
@@ -369,51 +335,47 @@
         </div>
 
         <div class="final-thoughts section">
-            <span class="title2 w700">Reflexões finais</span>
+            <span class="title2 w700">{{ $t('trade_plus.final_thoughts.title') }}</span>
             <br />
 
             <div class="text">
-                <span class="highlight w700">Desafios e Enriquecimento:</span>
+                <span class="highlight w700">{{ $t('trade_plus.final_thoughts.challenges') }}</span>
                 <ul>
                     <li>
-                        Tive a oportunidade de melhorar minha organização de processos e a comunicação com a equipe.
+                        {{ $t('trade_plus.final_thoughts.challenges_items.item1') }}
                     </li>
                     <li>
-                        Ver como os meus colegas de equipe entenderam o que era o UX e como ele agrega a empresa em um geral.
+                        {{ $t('trade_plus.final_thoughts.challenges_items.item2') }}
                     </li>
                 </ul>
                 
-                <span class="highlight w700">Implementação de Rotinas de Design:</span>
+                <span class="highlight w700">{{ $t('trade_plus.final_thoughts.design_routines') }}</span>
                 <ul>
                     <li>
-                        Consegui implantar rotinas de design com minha squad, o que foi um avanço importante.
+                        {{ $t('trade_plus.final_thoughts.routines_items.item1') }}
                     </li>
                     <li>
-                        Apresente  mostrei como o ux bem aplicado  impacta diretamente nos resultados, o que foi
-                        muito gratificante.
+                        {{ $t('trade_plus.final_thoughts.routines_items.item2') }}
                     </li>
                 </ul>
                 
-                <span class="highlight w700">Oportunidades Não Aproveitadas:</span>
+                <span class="highlight w700">{{ $t('trade_plus.final_thoughts.missed_opportunities') }}</span>
                 <ul>
                     <li>
-                        Senti falta de realizar entrevistas com usuários e testes de usabilidade após as decisões finais.
+                        {{ $t('trade_plus.final_thoughts.opportunities_items.item1') }}
                     </li>
                     <li>
-                        Ter acompanhado de perto o impacto dessas soluções nos usuários teria sido ideal para coletar
-                        feedbacks mais detalhados. Apesar disso, acredito que focamos nos pontos mais críticos e
-                        resolvemos as principais dores da empresa.
+                        {{ $t('trade_plus.final_thoughts.opportunities_items.item2') }}
                     </li>
                 </ul>
 
-                <span class="highlight w700">Previsões e resultados:</span>
+                <span class="highlight w700">{{ $t('trade_plus.final_thoughts.predictions_results') }}</span>
                 <ul>
                     <li>
-                        As sugestões baseadas na pesquisa foram entregues em alta fidelidade e de forma navegável.
+                        {{ $t('trade_plus.final_thoughts.results_items.item1') }}
                     </li>
                     <li>
-                        Acredito que as soluções implementadas irão melhorar a experiência do usuário e gerar
-                        resultados positivos para o negócio a longo prazo.
+                        {{ $t('trade_plus.final_thoughts.results_items.item2') }}
                     </li>
                 </ul>
             </div>
@@ -429,10 +391,13 @@
 <script setup>
     import MainTemplate from '@/templates/MainTemplate';
     import ImageModal from '@/components/ImageModal.vue';
-    import { ref } from 'vue';
+    import { ref, computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
     import wireflowImage from '@/assets/img/trade_plus_wireflow.png';
 
     import helpers from '@/mixins/helpers';
+
+    const { t } = useI18n();
 
     defineOptions({
         name: 'ui-trade-plus-case',
@@ -444,20 +409,20 @@
         mixins: [helpers]
     });
 
-    const objectives = [
+    const objectives = computed(() => [
         {
             icon: 'svg/clock_icon.svg',
-            label: 'Otimizar o cadastro'
+            label: t('trade_plus.data_analysis.objectives.optimize')
         },
         {
             icon: 'svg/doc_icon.svg',
-            label: 'Documentar telas e fluxo do usuário'
+            label: t('trade_plus.data_analysis.objectives.document')
         },
         {
             icon: 'svg/star_icon.svg',
-            label: 'Trazer insigths de novas funcionalidades'
+            label: t('trade_plus.data_analysis.objectives.insights')
         }
-    ];
+    ]);
 
     const showModal = ref(false);
 
